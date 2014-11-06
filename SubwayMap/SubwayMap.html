@@ -1,0 +1,152 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width,target-densitydpi=medium-dpi" />
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="js/css3-mediaqueries.js"></script>
+<![endif]-->
+
+    <title>Subway Map</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="jquery.subwayMap-0.5.0.js"></script>
+    <style type="text/css">
+    body
+    {
+        font-family: Verdana;
+        font-size: 8pt;
+		width:100%;
+    }
+
+    /* The main DIV for the map */
+    .subway-map
+    {
+        margin: 0;
+        height: auto;
+        background-color: white;
+		width:100%; margin-left:0px;  max-width:1024px;
+    }
+
+    /* Text labels */
+    .text
+    {
+        text-decoration: none;
+        color: black;
+    }
+
+    #legend
+    {
+        float: left;
+		width:100%;
+        max-width:200px;
+		margin-top:700px;
+    }
+
+    #legend div
+    {
+        height: 25px;
+    }
+
+    #legend span
+    {
+        margin: 5px 5px 5px 0;
+    }
+    .subway-map span
+    {
+        margin: 5px 5px 5px 0;
+    }
+ 
+    </style>
+</head>
+<body>
+    <div class="subway-map" data-columns="70" data-rows="70" data-cellSize="20" data-legendId="legend" data-textClass="text" data-gridNumbers="true" data-grid="false" data-lineWidth="8">
+        <ul data-color="#263c96" data-label="1호선">
+         <li data-coords="40.5,12"></li>      
+         <li data-coords="40.5,12"data-marker="@interchange"><a href="http://jqueryui.com/demos/Jongro3ga/">종로3가</a></li>
+         <li data-coords="37.5,13.5"><a href="http://jqueryui.com/demos/Jonggak/">종각</a></li>
+         <li data-coords="35,15.5"></li>
+         <li data-coords="35,15.5"data-marker="@interchange"><a href="http://jqueryui.com/demos/Jonggak/">시청</a></li>
+         <li data-coords="35,17"></li>
+         <li data-coords="35,17"data-marker="@interchange"><a href="http://jqueryui.com/demos/Jonggak/">서울역</a></li>
+         <li data-coords="33,18"><a href="http://jqueryui.com/demos/Jonggak/">남영</a></li>
+         <li data-coords="31,21"></li>
+         <li data-coords="31,21"data-marker="@interchange"><a href="http://jqueryui.com/demos/Jonggak/">용산</a></li>
+         <li data-coords="29,21"></li>
+         <li data-coords="29,21"data-marker="@interchange"><a href="http://jqueryui.com/demos/Jonggak/">노량진</a></li>
+         <li data-coords="27,21"><a href="http://jqueryui.com/demos/Jonggak/">대방</a></li>
+         <li data-coords="25,21"></li>
+         <li data-coords="25,21"data-marker="@interchange"><a href="http://jqueryui.com/demos/Jonggak/">신길</a></li>
+         
+         </ul> 
+      
+        <ul data-color="#ff7300" data-label="3호선">   
+           
+            <li data-coords="2,2" data-marker="interchange"><a href="http://jqueryui.com/demos/Daehwa/">대화</a></li>  
+            <li data-coords="4,2"><a href="http://jqueryui.com/demos/Jooyup/"><a href="http://jqueryui.com/demos/Jooyup/">주엽</a></li>    
+            <li data-coords="6,2"data-marker info="h5"><a href="http://jqueryui.com/demos/Jungbalsan/">정발산</a></li>  
+            <li data-coords="8,2"><a href="http://jqueryui.com/demos/Madu/">마두</a></li>  
+            <li data-coords="10,2"><a href="http://jqueryui.com/demos/Beaksuk/">백석</a></li> 
+            <li data-coords="12,2"data-marker="@interchange"><a href="http://jqueryui.com/demos/Daegoak/">대곡</a></li> 
+            <li data-coords="14,2"><a href="http://jqueryui.com/demos/Hwajung/">화정</a></li> 
+            <li data-coords="16,2"><a href="http://jqueryui.com/demos/Wondang/">원당</a></li> 
+            <li data-coords="18,2"><a href="http://jqueryui.com/demos/Samsong/">삼송</a></li>
+            <li data-coords="20,2"><a href="http://jqueryui.com/demos/Jichuk/">지축</a></li>
+            <li data-coords="22.5,4"><a href="http://jqueryui.com/demos/Gupabal/">구파발</a></li>
+            <li data-coords="23,6"></li>
+            <li data-coords="23,6" data-marker="@interchange"><a href="http://jqueryui.com/demos/Yeonsinnae/">연신내</a></li> 
+            <li data-coords="25,6" data-marker="@interchange"><a href="http://jqueryui.com/demos/Bulguang/">불광</a></li> 
+            <li data-coords="27,6" ><a href="http://jqueryui.com/demos/Nokbuen/">녹번</a></li> 
+            <li data-coords="29,6" ><a href="http://jqueryui.com/demos/Hongjae/">홍제</a></li> 
+            <li data-coords="31,6" ><a href="http://jqueryui.com/demos/MuackJae/">무악재</a></li> 
+            <li data-coords="33,6" ><a href="http://jqueryui.com/demos/selectable/">독립문</a></li>   
+            <li data-coords="35.5,8" ><a href="http://jqueryui.com/Kyeonboakgong//">경복궁</a></li> 
+            <li data-coords="38,10"><a href="http://jqueryui.com/demos/Angouk/">안국</a></li>
+            <li data-coords="40.5,12"></li>
+            <li data-coords="40.5,12"data-marker="@interchange"><a href="http://jqueryui.com/demos/Jongro3ga/">종로3가</a></li>
+            <li data-coords="41.5,14"></li>
+            <li data-coords="41.5,14"data-marker="@interchange"><a href="http://jqueryui.com/demos/yeuljiro3ga/">을지로3가</a></li>
+            <li data-coords="43,16.5"></li>
+            <li data-coords="43,16.5"data-marker="@interchange"><a href="http://jqueryui.com/demos/Chungmuro/">충무로</a></li>
+			<li data-coords="45.5,18.5"><a href="http://jqueryui.com/demos/Dongguk/">동대입구</a></li>
+            <li data-coords="48,20"></li>
+            <li data-coords="48,20"data-marker="@interchange"><a href="http://jqueryui.com/demos/Yaksu/">약수</a></li>
+            <li data-coords="48,22"><a href="http://jqueryui.com/demos/Gumho/">금호</a></li>
+            <li data-coords="48,24"data-marker="@interchange"><a href="http://jqueryui.com/demos/Aoeksu/">옥수</a></li>
+            <li data-coords="48,26"><a href="http://jqueryui.com/demos/Aepgujung/">압구정</a></li>
+			<li data-coords="44,26"><a href="http://jqueryui.com/demos/Sinsa/">신사</a></li>
+			<li data-coords="44,28"><a href="http://jqueryui.com/demos/Jamwon/">잠원</a></li>
+            <li data-coords="44,30"></li>
+			<li data-coords="44,30"data-marker="@interchange"><a href="http://jqueryui.com/demos/Gosoakterminal/">고속터미널</a></li>
+            <li data-coords="44,32"></li>
+            <li data-coords="44,32"data-marker="@interchange"><a href="http://jqueryui.com/demos/Gyudae/">교대</a></li>
+        	<li data-coords="45,33.5"><a href="http://jqueryui.com/demos/Nambuterminal/">남부터미널</a></li>
+            <li data-coords="47,36"></li>
+            <li data-coords="47,36" data-marker="@interchange"><a href="http://jqueryui.com/demos/Yangjae/">양재</a></li>
+            <li data-coords="49,36"><a href="http://jqueryui.com/demos/Maebong/">매봉</a></li>
+            <li data-coords="51,36"></li>
+            <li data-coords="51,36"data-marker="@interchange"><a href="http://jqueryui.com/demos/Dogoak/">도곡</a></li>
+            <li data-coords="53,36"><a href="http://jqueryui.com/demos/Daechi/">대치</a></li>
+            <li data-coords="55,36"><a href="http://jqueryui.com/demos/Hacyoaul/">학여울</a></li>
+        	<li data-coords="57,36"><a href="http://jqueryui.com/demos/Daechoeng/">대청</a></li>
+            <li data-coords="59,38"><a href="http://jqueryui.com/demos/Iiwon/">일원</a></li>
+            <li data-coords="61,40"></li>
+            <li data-coords="61,40"data-marker="@interchange"><a href="http://jqueryui.com/demos/Susoa/">수서</a></li>
+            <li data-coords="63,34"></li>
+            <li data-coords="63,34"data-marker="@interchange"><a href="http://jqueryui.com/demos/Iiwon/">가락시장</a></li>
+            <li data-coords="65.5,34"><a href="http://jqueryui.com/demos/Iiwon/">경찰병원</a></li>
+            <li data-coords="68,34"</li>
+            <li data-coords="68,34"data-marker="@interchange"><a href="http://jqueryui.com/demos/Iiwon/">오금</a></li>
+        </ul>  
+
+    </div>
+    <div id="legend"></div>
+    
+
+    <script type="text/javascript">
+        $(".subway-map").subwayMap({ debug: true });
+    </script>
+</body>
+</html>
