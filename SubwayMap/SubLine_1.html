@@ -1,0 +1,192 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8">
+    <title>Subway Map</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="jquery.subwayMap-0.5.0.js"></script>
+    <style type="text/css">
+    body
+    {
+        font-family: Verdana;
+        font-size: 8pt;
+    }
+
+    /* The main DIV for the map */
+    .subway-map
+    {
+        margin: 0;
+        width: 500px;
+        height:410px;
+        background-color: white;
+    }
+
+    /* Text labels */
+    .text
+    {
+        text-decoration: none;
+        color: black;
+    }
+
+    #legend
+    {
+        float: left;
+		width:100%;
+        max-width:200px;
+		margin-top:400px;
+    }
+
+    #legend div
+    {
+        height: 25px;
+    }
+
+    #legend span
+    {
+        margin: 5px 5px 5px 0;
+    }
+    .subway-map span
+    {
+        margin: 5px 5px 5px 0;
+    }
+ 
+    </style>
+</head>
+<body>
+    <div class="subway-map" data-columns="50" data-rows="50" data-cellSize="30" data-legendId="legend" data-textClass="text" data-gridNumbers="true" data-grid="false" data-lineWidth="8">
+        <ul data-color="#003499" data-label="1호선">
+           <li data-coords="2,4"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">인천</a></li>
+           <li data-coords="4,4"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">동인천</a></li>
+           <li data-coords="6,4"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">도원</a></li>
+           <li data-coords="8,4"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">제물포</a></li>
+           <li data-coords="10,4"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">도화</a></li>
+           <li data-coords="12,4"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">주안</a></li>
+           <li data-coords="14,4"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">간석</a></li>
+           <li data-coords="16,4"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">동암</a></li>
+           <li data-coords="18,4"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">백운</a></li>
+           <li data-coords="20,4"data-marker="@interchange"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">부평</a></li>
+           <li data-coords="22,4"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">부개</a></li>
+           <li data-coords="24,4"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">송내</a></li>
+           <li data-coords="26,4"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">중동</a></li>
+           <li data-coords="28,4"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">부천</a></li>
+           <li data-coords="30,4"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">소사</a></li>
+           <li data-coords="32,4"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">역곡</a></li>
+           <li data-coords="34,4"data-marker="@interchange"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">온수</a></li>
+           <li data-coords="36,4"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">오류</a></li>
+           <li data-coords="38,4"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">개봉</a></li>
+           <li data-coords="40,4"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">구일</a></li>
+           <li data-coords="42,4"data-marker="@interchange"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">구로</a></li>
+           <li data-coords="44,4"></li>
+           <li data-coords="42,4"></li>
+           <li data-coords="42,6"></li>
+           <li data-coords="42,6"data-marker="@interchange"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">가산\n디지털단지</a></li>
+           <li data-coords="40,7"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">독산</a></li>
+           <li data-coords="38,8"></li>
+           <li data-coords="38,8"data-marker="@interchange"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">금천구청</a></li>
+           <li data-coords="40,9"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">광명</a></li>
+           <li data-coords="38,8"></li>
+           
+           <li data-coords="36,8"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">석수</a></li>
+           <li data-coords="34,8"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">관악</a></li>
+           <li data-coords="32,8"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">안양</a></li>
+           <li data-coords="30,8"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">명학</a></li>
+           <li data-coords="28,8"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">금정</a></li>
+           <li data-coords="26,8"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">군포</a></li>
+           <li data-coords="24,8"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">당정</a></li>
+           <li data-coords="22,8"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">의왕</a></li>
+           <li data-coords="20,8"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">성균관대</a></li>
+           <li data-coords="18,8"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">화서</a></li>
+           <li data-coords="16,8"></li>
+           <li data-coords="16,8"data-marker="@interchange"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">수원</a></li>
+           <li data-coords="14,8"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">세류</a></li>
+           <li data-coords="12,8"data-marker="@interchange"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">병점</a></li>
+           <li data-coords="10,8"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">세마</a></li>
+           <li data-coords="8,8"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">오산대</a></li>
+           <li data-coords="7,10"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">오산</a></li>
+           <li data-coords="7,12"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">진위</a></li>
+           <li data-coords="7,14"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">송탄</a></li>
+           <li data-coords="8,16"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">서정리</a></li>
+           <li data-coords="9,18"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">지제</a></li>
+           <li data-coords="11,18"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">평택</a></li>
+           <li data-coords="13,18"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">성환</a></li>
+           <li data-coords="15,18"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">직산</a></li>
+           <li data-coords="17,18"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">두정</a></li>
+           <li data-coords="19,18"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">천안</a></li>
+           <li data-coords="19,20"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">봉명</a></li>
+           <li data-coords="19,22"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">쌍용</a></li>
+           <li data-coords="21,22"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">아산</a></li>
+           <li data-coords="23,22"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">배방</a></li>
+           <li data-coords="25,22"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">온양\n온천</a></li>
+           <li data-coords="27,22"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">신창</a></li>
+           <li data-coords="19,22"></li>
+           <li data-coords="19,18"></li>
+           <li data-coords="9,18"></li>
+           <li data-coords="8,16"></li>
+           <li data-coords="7,14"></li>
+           <li data-coords="7,10"></li>
+           <li data-coords="8,8"></li>
+           <li data-coords="38,8"></li>
+           <li data-coords="40,7"></li>
+           <li data-coords="42,6"></li>
+           <li data-coords="42,4"></li>
+		   <li data-coords="44,4"></li>
+           <li data-coords="44,4"data-marker="@interchange"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">신도림</a></li>
+           <li data-coords="46,4"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">영등포</a></li>
+		   <li data-coords="47,6"></li>
+           <li data-coords="47,6"data-marker="@interchange"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">신길</a></li>
+           <li data-coords="47,8"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">대방</a></li>
+           <li data-coords="47,10"></li>
+           <li data-coords="47,10"data-marker="@interchange"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">노량진</a></li>
+           <li data-coords="46,12"></li>
+           <li data-coords="46,12"data-marker="@interchange"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">용산</a></li>
+           <li data-coords="44,12"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">남영</a></li>
+           <li data-coords="42,12"data-marker="@interchange"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">서울역</a></li>
+           <li data-coords="40,12"data-marker="@interchange"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">시청</a></li>
+           <li data-coords="38,12"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">종각</a></li>
+           <li data-coords="36,12"data-marker="@interchange"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">종로3가</a></li>
+           <li data-coords="34,12"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">종로5가</a></li>
+           <li data-coords="32,12"data-marker="@interchange"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">동대문</a></li>
+           <li data-coords="30,12"data-marker="@interchange"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">동묘앞</a></li>
+           <li data-coords="28,12"data-marker="@interchange"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">신설동</a></li>
+           <li data-coords="26,12"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">제기동</a></li>
+           <li data-coords="26,14"></li>
+           <li data-coords="26,14"data-marker="@interchange"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">청량리</a></li>
+           <li data-coords="26,16"data-marker="@interchange"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">회기</a></li>
+           <li data-coords="26,18"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">외대앞</a></li>
+           <li data-coords="28,19"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">신이문</a></li>
+           <li data-coords="30,19"></li>
+           <li data-coords="30,19"data-marker="@interchange"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">석계</a></li>
+           <li data-coords="32,19"data-marker="@interchange"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">광운대</a></li>
+           <li data-coords="34,19"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">월계</a></li>
+           <li data-coords="36,19"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">녹천</a></li>
+           <li data-coords="38,19"data-marker="@interchange"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">창동</a></li>
+           <li data-coords="40,19"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">방학</a></li>
+           <li data-coords="42,19"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">도봉</a></li>
+           <li data-coords="44,19"></li>
+           <li data-coords="44,19"data-marker="@interchange"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">도봉산</a></li>
+           <li data-coords="46,20"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">망월사</a></li>
+           <li data-coords="46,22"></li>
+           <li data-coords="46,22"data-marker="@interchange"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">회룡</a></li>
+           <li data-coords="46,24"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">의정부</a></li>
+           <li data-coords="44,25"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">가능</a></li>
+           <li data-coords="42,25"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">녹양</a></li>
+           <li data-coords="40,25"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">양주</a></li>
+           <li data-coords="38,25"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">덕계</a></li>
+           <li data-coords="36,25"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">덕정</a></li>
+           <li data-coords="34,25"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">지행</a></li>
+           <li data-coords="32,25"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">동두천\n중앙</a></li>
+           <li data-coords="30,25"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">보산</a></li>
+           <li data-coords="28,25"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">동두천</a></li>
+           <li data-coords="26,25"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">소요산</a></li>
+           
+        </ul>
+
+
+    </div>
+    <div id="legend"></div>
+    
+
+    <script type="text/javascript">
+        $(".subway-map").subwayMap({ debug: true });
+    </script>
+</body>
+</html> 
