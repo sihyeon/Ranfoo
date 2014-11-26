@@ -9,5 +9,5 @@ Web_Project_1_Ranfoo
 
 using ID :
 박시현 - sihyeon
-김희준 - gimijuny
+김희준 - gimijuny / heejun
 주영진 - YoungjinJoo / jkevin0119

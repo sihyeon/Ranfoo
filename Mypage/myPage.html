@@ -3,6 +3,10 @@
 <head>
 <meta charset = "utf-8">
 	<title>마이페이지</title>
+  <link rel="stylesheet" type="text/css" href="./stylesheet/myPage.css">
+  <link rel="stylesheet" type="text/css" href="./stylesheet/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="./stylesheet/bootstrap-theme.css">
+  <link rel="stylesheet" type="text/css" href="./stylesheet/bootstrap-theme.min.css">
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 </head>
@@ -18,24 +22,25 @@
 <br>
 <div class="introduce">
   <h2>자기 소개</h2>
-  <textarea rows="10" cols="100%"></textarea>
+  <textarea id="setSize" rows="8"></textarea>
   <button type="button">save</button>
 </div>
 <br>
-<div class="join">
+<div id="setLength">
   <h2>신청 현황</h2>
-  <ol>
-    <li>신청지: 강남역</li>
-    <li>시간: 15:00</li>
-    <li>신청인원: 15명</li>
-    <button type="button">Chat!</button>
-  </ol>
-  <ol>
-    <li>신청지: 범계역</li>
-    <li>시간: 17:00</li>
-    <li>신청인원: 1명</li>
-    <button type="button">Chat!</button>
-  </ol>
+    <ul>
+      <li><pre>신청지: 강남역</pre></li>
+      <li><pre>시간: 15:00</pre></li>
+      <li><pre>신청인원: 5명</pre></li>
+      <button type="button">Chat!</button>
+    </ul>
+    <br>
+    <ul>
+      <li><pre>신청지: 범계역</pre></li>
+      <li><pre>시간: 17:00</pre></li>
+      <li><pre>신청인원: 1명</pre></li>
+      <button type="button">Chat!</button>
+    </ul>
 </div>
 </body>
 </html>
