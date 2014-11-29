@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+    <head>
+		<meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>Start and enjoy your RanFoo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="arctext.js" />
+        <meta name="keywords" content="arc, letters, words, rotate, warp, circle, curve, along, path, jquery, css3, transform" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/test.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link href='http://fonts.googleapis.com/css?family=Montserrat|Sail|Concert+One' rel='stylesheet' type='text/css' />
+   <style type="text/css">
+    body
+    {
+        font-family: Verdana;
+        font-size: 8pt;
+    }
+
+    /* The main DIV for the map */
+    .subway-map
+    {
+        margin: 0;
+        width: 1200px;
+        height:760px;
+       
+    }
+
+    /* Text labels */
+    .text
+    {
+        text-decoration: none;
+        color: black;
+    }
+
+  
+    .subway-map span
+    {
+        margin: 5px 5px 5px 0;
+    }
+ 
+    </style>
+    </head>
+    
+    <body>
+
+			<section class="sub" id="sub1">
+		 <div class="subway-map" data-columns="50" data-rows="50" data-cellSize="25" data-legendId="legend" data-textClass="text" data-gridNumbers="true" data-grid="false" data-lineWidth="8">
+        <ul data-color="#34c5a4" data-label="경춘선">
+            <li data-coords="26,4"data-marker="@interchange"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">용산</a></li>
+            <li data-coords="24,4"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">옥수</a></li>
+            <li data-coords="22,4"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">왕십리</a></li>
+            <li data-coords="20,4"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">청량리</a></li>
+            <li data-coords="19,4"data-dir="W"></li>
+            <li data-coords="20,2"></li>
+            <li data-coords="23,2"></li>
+            <li data-coords="23,2"data-marker="@interchange"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">광운대</a></li>
+            <li data-coords="20,2"></li>
+            <li data-coords="19,4"data-dir="W"></li>
+            <li data-coords="18,4"data-marker="@interchange"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">상봉</a></li>
+            <li data-coords="16,4"data-marker="@interchange"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">망우</a></li>
+            <li data-coords="14,4"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">신내</a></li>
+            <li data-coords="12,4"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">갈매</a></li>
+            <li data-coords="10,4"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">별내</a></li>
+            <li data-coords="8,4"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">퇴계원</a></li>
+            <li data-coords="7,5"data-dir="W"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">사릉</a></li>
+            <li data-coords="7,7"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">금곡</a></li>
+            <li data-coords="7,9"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">평내\n호평</a></li>
+            <li data-coords="8,10"data-dir="S"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">천마산</a></li>
+            <li data-coords="10,10"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">마석</a></li>
+            <li data-coords="12,10"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">대성리</a></li>
+            <li data-coords="14,10"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">청평</a></li>
+            <li data-coords="16,10"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">상천</a></li>
+            <li data-coords="18,10"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">가평</a></li>
+            <li data-coords="20,10"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">굴봉산</a></li>
+            <li data-coords="22,10"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">백양리</a></li>
+            <li data-coords="24,10"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">강촌</a></li>
+            <li data-coords="26,10"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">김유정</a></li>
+            <li data-coords="28,10"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">남춘천</a></li>
+            <li data-coords="30,10"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">춘천</a></li>
+        
+        
+        
+        </ul>
+
+
+    </div>
+    <div id="legend"></div>
+
+    
+
+			</section>
+        </div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.arctext.js"></script>
+		<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+		<script type="text/javascript"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="jquery.subwayMap-0.5.0.js"></script> 
+    	<script type="text/javascript">
+        $(".subway-map").subwayMap({ debug: true });
+    	</script>
+    </body>
+</html>
