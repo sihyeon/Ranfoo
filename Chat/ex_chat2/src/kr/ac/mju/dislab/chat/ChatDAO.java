@@ -1,4 +1,4 @@
-package chat;
+package kr.ac.mju.dislab.chat;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -6,20 +6,13 @@ import java.util.List;
 import javax.naming.*;
 import javax.sql.*;
 
+import org.apache.catalina.Context;
+import org.apache.tomcat.jdbc.pool.DataSource;
+
 public class ChatDAO {
-	public static DataSource getDataSource() throws NamingException {
-		Context initCtx = null;
-		Context envCtx = null;
-
-		// Obtain our environment naming context
-		initCtx = new InitialContext();
-		envCtx = (Context) initCtx.lookup("java:comp/env");
-
-		// Look up our data source
-		return (DataSource) envCtx.lookup("jdbc/WebDB");
-	}
 	
-	public static List<Message> getChatList(int last) throws SQLException, NamingException, ClassNotFoundException {
+	
+	public static List<Message> getChatList(int last) throws SQLException, NamingException {
 		
 		List<Message> msgList = new ArrayList<Message>();
 		
@@ -27,12 +20,15 @@ public class ChatDAO {
 		PreparedStatement stmt = null;
 		ResultSet rs = null;
 		
-		DataSource ds = getDataSource();
+		String dbUrl = "jdbc:mysql://localhost:3306/chat";
+		String dbUser = "id01";
+		String dbPassword = "pwd01";
 		
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			
-			conn = ds.getConnection();
+		    // DB 접속
+			conn = DriverManager.getConnection(dbUrl, dbUser, dbPassword);
 			
 			// 질의 준비
 			if (last >= 0) {
@@ -52,9 +48,12 @@ public class ChatDAO {
 
 			while (rs.next()) {
 				Message msg = new Message(rs.getInt("id"), rs.getString("name"), 
-								rs.getString("message"), rs.getTimestamp("created_at"));
+								rs.getString("message"));
 				msgList.add(msg);		
 			}	
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		} finally {
 			// 무슨 일이 있어도 리소스를 제대로 종료
 			if (rs != null) try{rs.close();} catch(SQLException e) {}
@@ -66,21 +65,25 @@ public class ChatDAO {
 		
 	
 	}
-	public static boolean sendMessage(Message msg) throws SQLException, NamingException
+	public static boolean sendMessage(Message msg) throws SQLException, NamingException, ClassNotFoundException
 	{
 		int result;
 		Connection conn = null;
 		PreparedStatement stmt = null;
 		ResultSet rs = null;
 		
-		DataSource ds = getDataSource();
+		String dbUrl = "jdbc:mysql://localhost:3306/chat";
+		String dbUser = "id01";
+		String dbPassword = "pwd01";
 		
 		try {
-			conn = ds.getConnection();
+			Class.forName("com.mysql.jdbc.Driver");
+			
+			conn = DriverManager.getConnection(dbUrl, dbUser, dbPassword);
 
 			// 질의 준비
 			
-			stmt = conn.prepareStatement("INSERT INTO chats(name, message) VALUES (?, ?);");
+			stmt = conn.prepareStatement("INSERT INTO chats(name, message) VALUES (?);");
 			stmt.setString(1, msg.getName());
 			stmt.setString(2, msg.getContent());
 			

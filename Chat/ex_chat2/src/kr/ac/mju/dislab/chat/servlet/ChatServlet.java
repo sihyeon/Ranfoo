@@ -1,21 +1,21 @@
-package servlet;
-
+package kr.ac.mju.dislab.chat.servlet;
 
 import java.io.IOException;
+
 import java.sql.SQLException;
 import java.util.List;
 
 import javax.naming.NamingException;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
 import org.json.simple.*;
 
-import chat.*;
+import kr.ac.mju.dislab.chat.*;
 
 /**
  * Servlet implementation class messageSender

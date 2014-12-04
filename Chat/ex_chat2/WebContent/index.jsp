@@ -10,23 +10,32 @@
 	<script src="js/json2.js"></script>
 	</head>
 	<body>
-		<div id = 'chat'>
-			<table border='0' width='600' height='200'>
-			<tr height='20' align='center'>
-				<td width='200'>대화창</td><td width='400'>대화참여자</td>
-			</tr>
-			<tr height='150' align='center'>
-				<td>
-					<textarea name='chatArea' rows='9' cols='50' readonly></textarea>
-				</td>
-				<td>
-			    	<select name='userList' size='9' cols='10' style='width:150'></select>
-				</td>
-			</tr>
-			<tr height='30' align='left'>
-				<td colspan='3'><input type='text' name='name' size='15'><input type='text' name='msg' size='50' onkeydown='keySendMsg()'> <input type='button' value='Send' onclick='sendMsg()'></td>
-			</tr>
-			</table>
+		<div>
+			<div id="messages"></div>
+			<div id="error" style="display: none"></div>
+			<form id="chat_form">
+				<table border="0" width="600" height="200">
+				<tr height='20' align='center'>
+					<td width="400">대화창</td><td width="200">대화참여자</td>
+				</tr>
+				<tr height="150" align="center">
+					<td>
+						<textarea id="chatArea" rows="10" cols="54" width="400" readonly></textarea>
+					</td>
+					<td>
+				    	<textarea id="userList" rows='10' cols="26" width="200" readonly></textarea>
+					</td>
+				</tr>
+				<tr height='30' align='left'>
+					<td colspan='2'>
+					<input type="text" id="name" size="15" value="${current_name}">
+					<input type="text" id="msg" size="50">
+					<input type="button" id="send" value='send'>
+					<img src="images/ajax-loader.gif" style="display: none;" id="loading">
+					</td>
+				</tr>
+				</table>
+				</form>
 		</div>
 	</body>
 	<script type="text/javascript">
@@ -45,15 +54,11 @@
 					last_id = data.last;
 					$(data.msgs).each(
 							function(i, item) {
-	
 								// 각 메시지를 해당위치에 추가
-								$("<div class='message " + item.mine + "'></div>")
-										.append(
-												"</span>").append(
-												item.content).append(
-												"<span class='time'>" + item.time
-														+ "</span>").appendTo(
-												"#messages");
+								 //var txt = $("textarea#chatArea").append(item.name + ":").append(item.content);
+								// txt.val( txt.val() + "\n\n"); 
+								$("#chatArea").append(item.name + ": ").append(item.content).append("\n");
+								$("#userList").append(item.name).append("\n");
 							});
 	
 					// 새로운 메시지가 있을 경우, 입력 폼이 보이도록 스크롤
@@ -66,6 +71,11 @@
 		$(function() {
 			$("#send").click(function() {
 				// 이름이나 내용이 없으면 포커스를 옮기고 종료
+				if ($("#name").val().length == 0) {
+					alert("이름을 입력하여 주세요.");
+					$("#name").focus();
+					return;
+				}
 				if ($("#msg").val().length == 0) {
 					alert("내용을 입력하여 주세요.");
 					$("#msg").focus();

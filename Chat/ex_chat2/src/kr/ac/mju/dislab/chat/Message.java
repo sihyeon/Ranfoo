@@ -1,4 +1,4 @@
-package chat;
+package kr.ac.mju.dislab.chat;
 
 import java.sql.Timestamp;
 import java.util.*;
@@ -10,18 +10,16 @@ public class Message implements java.io.Serializable {
 	private String name;
 	private String content;
 	private int id;
-	private Date time;
 
 	public Message(String name, String content) {
 		this.name = name;
 		this.content = content;
 	}
 
-	public Message(int id, String name, String content, Timestamp time) {
+	public Message(int id, String name, String content) {
 		this.id = id;
 		this.name = name;
 		this.content = content;
-		this.time = time;
 	}
 
 	public String getName() {
@@ -36,16 +34,13 @@ public class Message implements java.io.Serializable {
 		return content;
 	}
 
-	public void setTime(Date time) {
-		this.time = time;
-	}
 
 	// json 형태로 출력
+	@SuppressWarnings("unchecked")
 	public JSONObject toJSON(String current_name) {
 		JSONObject jsonObj = new JSONObject();
 		jsonObj.put("name", getName());
 		jsonObj.put("content", getContent());
-		jsonObj.put("time", time.toString());
 		jsonObj.put("id", getId());
 		jsonObj.put("mine", (current_name != null && 
 				current_name.equals(getName())) ? "mine" : "");
