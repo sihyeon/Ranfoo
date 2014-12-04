@@ -1,121 +1,61 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
-<title>Insert title here</title>
-<link rel="stylesheet" type="text/css" href="./stylesheet/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="./stylesheet/bootstrap-theme.css">
-  <link rel="stylesheet" type="text/css" href="./stylesheet/bootstrap-theme.min.css">
-	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<meta charset="UTF-8">
+	<title>Joinpage</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/Style00.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </head>
 <body>
-<div class="list">
-  <table style="width:500px" class="table table-hover">
-    <tr>
-      <td colspan="2">
-        <h2>½ΕΓ»Ώª: °­³²Ώª</h2>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <pre>½Γ°£: 00:00   ΐΞΏψ:  0Έν  <button type="button">join</button></pre>
-      </td>
-      <td>
-        <pre>½Γ°£: 13:00   ΐΞΏψ: 16Έν  <button type="button">join</button></pre>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <pre>½Γ°£: 02:00   ΐΞΏψ:  3Έν  <button type="button">join</button></pre>
-      </td>
-      <td>
-        <pre>½Γ°£: 14:00   ΐΞΏψ:  5Έν  <button type="button">join</button></pre>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <pre>½Γ°£: 03:00   ΐΞΏψ:  0Έν  <button type="button">join</button></pre>
-      </td>
-      <td>
-        <pre>½Γ°£: 15:00   ΐΞΏψ:  5Έν  <button type="button">join</button></pre>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <pre>½Γ°£: 04:00   ΐΞΏψ:  0Έν  <button type="button">join</button></pre>
-      </td>
-      <td>
-        <pre>½Γ°£: 16:00   ΐΞΏψ:  3Έν  <button type="button">join</button></pre>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <pre>½Γ°£: 05:00   ΐΞΏψ:  0Έν  <button type="button">join</button></pre>
-      </td>
-      <td>
-        <pre>½Γ°£: 17:00   ΐΞΏψ:  1Έν  <button type="button">join</button></pre>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <pre>½Γ°£: 06:00   ΐΞΏψ:  0Έν  <button type="button">join</button></pre>
-      </td>
-      <td>
-        <pre>½Γ°£: 18:00   ΐΞΏψ: 17Έν  <button type="button">join</button></pre>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <pre>½Γ°£: 07:00   ΐΞΏψ:  0Έν  <button type="button">join</button></pre>
-      </td>
-      <td>
-        <pre>½Γ°£: 19:00   ΐΞΏψ: 20Έν  <button type="button">join</button></pre>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <pre>½Γ°£: 08:00   ΐΞΏψ:  0Έν  <button type="button">join</button></pre>
-      </td>
-      <td>
-        <pre>½Γ°£: 20:00   ΐΞΏψ: 12Έν  <button type="button">join</button></pre>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <pre>½Γ°£: 09:00   ΐΞΏψ:  2Έν  <button type="button">join</button></pre>
-      </td>
-      <td>
-        <pre>½Γ°£: 21:00   ΐΞΏψ:  7Έν  <button type="button">join</button></pre>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <pre>½Γ°£: 10:00   ΐΞΏψ:  3Έν  <button type="button">join</button></pre>
-      </td>
-      <td>
-        <pre>½Γ°£: 22:00   ΐΞΏψ:  3Έν  <button type="button">join</button></pre>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <pre>½Γ°£: 11:00   ΐΞΏψ: 10Έν  <button type="button">join</button></pre>
-      </td>
-      <td>
-        <pre>½Γ°£: 23:00   ΐΞΏψ:  5Έν  <button type="button">join</button></pre>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <pre>½Γ°£: 12:00   ΐΞΏψ: 20Έν  <button type="button">join</button></pre>
-      </td>
-      <td>
-        <pre>½Γ°£: 24:00   ΐΞΏψ:  0Έν  <button type="button">join</button></pre>
-      </td>
-    </tr>
-  </table>
-</div>
+  <div class="container">
+	<%	if (request.getMethod() == "POST") { %>
+		 <div class="well">
+		  <ul>
+		    <li>μ‹ μ²­μ—­ : <%=request.getParameter("station")%></li>
+		    <li>μ‹κ°„ : <%=request.getParameter("time")%></li>
+		    <li>μΈμ› : <%=request.getParameter("membernum")%></li>
+		    <li>Join : <%=request.getParameter("join")%></li>
+		    </ul>
+		 </div>
+  <%} else { %>
+    <div>
+		  <h1>Join this Station</h1>
+
+		  <form class="form-vertical" method="post">
+			<fieldset>
+				<div id="legend">
+					<legend>You can Join this Station in any time.</legend>
+				</div>
+				<div class ="form-vertical">
+				<label class="col-lg-3 control-label">Join Station : 
+				</label>
+				<div class = "col-lg-3">
+    		<ul>
+      	<li>12:00  &nbsp;&nbsp;μΈμ›:  0λª…   &nbsp;&nbsp;<a href="#" class="myButton">Join</a>
+      	&nbsp;&nbsp;&nbsp;&nbsp;13:00  &nbsp;&nbsp;μΈμ›:  0λª…   &nbsp;&nbsp;<a href="#" class="myButton">Join</a></li><br/>
+      	<li>14:00  &nbsp;&nbsp;μΈμ›:  0λª…   &nbsp;&nbsp;<a href="#" class="myButton">Join</a>
+      	&nbsp;&nbsp;&nbsp;&nbsp;15:00  &nbsp;&nbsp;μΈμ›:  0λª…   &nbsp;&nbsp;<a href="#" class="myButton">Join</a></li><br/>
+      	<li>16:00  &nbsp;&nbsp;μΈμ›:  0λª…   &nbsp;&nbsp;<a href="#" class="myButton">Join</a>
+      	&nbsp;&nbsp;&nbsp;&nbsp;17:00  &nbsp;&nbsp;μΈμ›:  0λª…   &nbsp;&nbsp;<a href="#" class="myButton">Join</a></li><br/>
+      	<li>18:00  &nbsp;&nbsp;μΈμ›:  0λª…   &nbsp;&nbsp;<a href="#" class="myButton">Join</a>
+      	&nbsp;&nbsp;&nbsp;&nbsp;19:00  &nbsp;&nbsp;μΈμ›:  0λª…   &nbsp;&nbsp;<a href="#" class="myButton">Join</a></li><br/>
+      	<li>20:00  &nbsp;&nbsp;μΈμ›:  0λª…   &nbsp;&nbsp;<a href="#" class="myButton">Join</a>
+      	&nbsp;&nbsp;&nbsp;&nbsp;21:00  &nbsp;&nbsp;μΈμ›:  0λª…   &nbsp;&nbsp;<a href="#" class="myButton">Join</a></li><br/>
+      	<li>22:00  &nbsp;&nbsp;μΈμ›:  0λª…   &nbsp;&nbsp;<a href="#" class="myButton">Join</a>
+      	&nbsp;&nbsp;&nbsp;&nbsp;23:00  &nbsp;&nbsp;μΈμ›:  0λª…   &nbsp;&nbsp;<a href="#" class="myButton">Join</a></li><br/>
+      	<li>24:00  &nbsp;&nbsp;μΈμ›:  0λª…   &nbsp;&nbsp;<a href="#" class="myButton">Join</a></li><br/>
+				<a href="#" class="myButton" >EXIT</a>
+    		</ul>
+				</div>
+				</fieldset>
+		  </form>
+    </div>
+	<% } %>
+  </div>
 </body>
 </html>
+
