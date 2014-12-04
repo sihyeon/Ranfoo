@@ -10,7 +10,7 @@
 </head>
 <body>
 <form class="login">
-    <h1 class="login-title">Simple Login</h1>
+    <h1 class="login-title">Welcome to the Ranfoo</h1>
     <input type="text" class="login-input" placeholder="Email Adress" autofocus>
     <input type="password" class="login-input" placeholder="Password">
     <input type="submit" value="Lets Go" class="login-button">
