@@ -4,13 +4,17 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Joinpage</title>
+	<title>Join page</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/Style00.css" rel="stylesheet">
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <style type="text/css">
+  </style>
 </head>
 <body>
+
   <div class="container">
 	<%	if (request.getMethod() == "POST") { %>
 		 <div class="well">
@@ -22,9 +26,9 @@
 		    </ul>
 		 </div>
   <%} else { %>
-    <div>
-		  <h1>Join this Station</h1>
-
+  <br>
+		<div id="header" class="ribbon" >
+             <h1><a>Are you Join this Station?</a></h1>
 		  <form class="form-vertical" method="post">
 			<fieldset>
 				<div id="legend">
