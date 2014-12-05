@@ -6,37 +6,47 @@
 	<head>
 	<meta charset="UTF-8">
 	<title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/chat.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery-1.8.2.min.js"></script>
 	<script src="js/json2.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+	</style>
 	</head>
 	<body>
-		<div>
-			<div id="messages"></div>
-			<div id="error" style="display: none"></div>
-			<form id="chat_form">
-				<table border="0" width="600" height="200">
-				<tr height='20' align='center'>
-					<td width="400">대화창</td><td width="200">대화참여자</td>
-				</tr>
-				<tr height="150" align="center">
-					<td>
-						<textarea id="chatArea" rows="10" cols="54" width="400" readonly></textarea>
-					</td>
-					<td>
-				    	<textarea id="userList" rows='10' cols="26" width="200" readonly></textarea>
-					</td>
-				</tr>
-				<tr height='30' align='left'>
-					<td colspan='2'>
-					<input type="text" id="name" size="15" value="${current_name}">
-					<input type="text" id="msg" size="50">
-					<input type="button" id="send" value='send'>
-					<img src="images/ajax-loader.gif" style="display: none;" id="loading">
-					</td>
-				</tr>
-				</table>
-				</form>
-		</div>
+    	<div id="container">
+            <div id="header" class="ribbon">
+                <h1><a>병점역 2시</a></h1>
+                <div id="error" style="display: none"></div>
+                <form id="chat_form">
+                    <table width = "1000" height = "400">
+                    <tr height='20' align='center'>
+                        <td width="800">대화창</td>
+                        <td width="200">대화참여자</td>
+                    </tr>
+                    <tr height="350" align="center">
+                        <td>
+                            <textarea id="chatArea" width="800" readonly></textarea>
+                        </td>
+                        <td>
+                            <textarea id="userList" width="200" readonly></textarea>
+                        </td>
+                    </tr>
+                    <tr height='30' align='left'>
+                        <td colspan='2'>
+                        <input type="text" id="name">
+                        <input type="text" id="msg">
+                        <input type="button" id="send" value='send'>
+                        <img src="images/ajax-loader.gif" style="display: none;" id="loading">
+                        </td>
+                    </tr>
+                    </table>
+                    </form>
+             </div>
+        </div>
 	</body>
 	<script type="text/javascript">
 		var last_id = -1; // unknown
@@ -55,9 +65,7 @@
 					$(data.msgs).each(
 							function(i, item) {
 								// 각 메시지를 해당위치에 추가
-								 //var txt = $("textarea#chatArea").append(item.name + ":").append(item.content);
-								// txt.val( txt.val() + "\n\n"); 
-								$("#chatArea").append(item.name + ": ").append(item.content).append("\n");
+								$("#chatArea").append(item.name + "님: ").append(item.content).append("\n");
 								$("#userList").append(item.name).append("\n");
 							});
 	
