@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="UTF-8">
     <head>
 		<meta charset="UTF-8"/>
@@ -13,21 +13,24 @@
         <link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link href='http://fonts.googleapis.com/css?family=Montserrat|Sail|Concert+One' rel='stylesheet' type='text/css' />
    <style type="text/css">
-    body
+     body
     {
         font-family: Verdana;
-        font-size: 8pt;
+        font-size: 9pt;
     }
 
     /* The main DIV for the map */
-    .subway-map
-    {
-        margin: 0;
-        width: 1200px;
-        height:760px;
-       
-    }
+    .sub
+	{
+	    width: 1024px;
+		height: 600px;
+	}	
 
+	.subway-map
+    {
+        width: 1024px;
+		height: 600px;
+    }
     /* Text labels */
     .text
     {
@@ -47,7 +50,7 @@
     <body>
 
 			<section class="sub" id="sub1">
-<div class="subway-map" data-columns="50" data-rows="50" data-cellSize="25" data-legendId="legend" data-textClass="text" data-gridNumbers="true" data-grid="false" data-lineWidth="8">
+<div class="subway-map" data-columns="50" data-rows="50" data-cellSize="28" data-legendId="legend" data-textClass="text" data-gridNumbers="true" data-grid="false" data-lineWidth="8">
         <ul data-color="#287f74" data-label="중앙선">
           <li data-coords="26,4"data-marker="@interchange"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">용산</a></li>
             <li data-coords="24,4"data-marker="@interchange"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">이촌</a></li>
@@ -92,7 +95,7 @@
 		<script type="text/javascript" src="http://www.google.com/jsapi"></script>
 		<script type="text/javascript"></script>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
-        <script type="text/javascript" src="jquery.subwayMap-0.5.0.js"></script> 
+        <script type="text/javascript" src="js/jquery.subwayMap-0.5.0.js"></script> 
     	<script type="text/javascript">
         $(".subway-map").subwayMap({ debug: true });
     	</script>

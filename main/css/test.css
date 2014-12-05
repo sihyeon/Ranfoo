@@ -37,7 +37,7 @@ abbr,acronym { border:0;
 section, header{
 	display: block;
 }
-/* General Demo Style */
+/* Style */
 body{
 	font-family: Cambria, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
 	background: #95AB9D url(../images/texture.png) repeat top left;

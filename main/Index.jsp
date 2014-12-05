@@ -44,7 +44,7 @@
 			<section class="main">				
 				<div id="arc-wrapper" class="arc-wrapper">
 					<h3>JUST &diams; JOIN &diams; IN THE &diams; MAP</h3>
-					<h4>CAUWAAP</h4>
+					<h4>MJUWAAP</h4>
 				</div>
 			</section>
 			<section class="sub" id="sub1">
@@ -72,7 +72,26 @@
 					<a href="http://www.naver.com">네이버</a>
 					<% else %>
 					<a href="#" id="show">네이버</a>
-					<code>1 2 3 4 5 6 7 8 9 신분당 의정부 인천 등등</code>
+					<code>			<a href="Line1-1.html"><img src="images/1.png"alt="1호선"></a>
+                    &nbsp;<a href="Line2-2.html"><img src="images/2.png"alt="2호선"></a>
+                    &nbsp;<a href="Line3-3.html"><img src="images/3.png"alt="3호선"></a>
+                    &nbsp;<a href="Line4-4.html"><img src="images/4.png"alt="4호선"></a>
+                    &nbsp;<a href="Line5-5.html"><img src="images/5.png"alt="5호선"></a>
+                    &nbsp;<a href="Line6-6.html"><img src="images/6.png"alt="6호선"></a>
+                    &nbsp;<a href="Line7-7.html"><img src="images/7.png"alt="7호선"></a>
+                    &nbsp;<a href="Line8-8.html"><img src="images/8.png"alt="8호선"></a>
+                    &nbsp;<a href="Line9-9.html"><img src="images/9.png"alt="9호선"></a>
+                    <br /><a href="Line신분당.html"><img src="images/신분당선.png"alt="신분당선"></a>
+                    &nbsp;<a href="Line공항.html"><img src="images/공항선.png"alt="공항선"></a>
+                    &nbsp;<a href="Line중앙.html"><img src="images/중앙선.png"alt="중앙선"></a>
+                    &nbsp;<a href="Line의정부.html"><img src="images/의정부선.png"alt="의정부선"></a>
+                    &nbsp;<a href="Line경의.html"><img src="images/경의선.png"alt="경의선"></a>
+                    &nbsp;<a href="Line경춘.html"><img src="images/경춘선.png"alt="경춘선"></a>
+                    <br /><a href="Line에버.html"><img src="images/에버라인.png"alt="에버랜드선"></a>
+                    &nbsp;<a href="Line수인.html"><img src="images/수인선.png"alt="수인선"></a>
+                    &nbsp;<a href="Line분당.html"><img src="images/분당선.png"alt="분당선"></a>
+                    &nbsp;<a href="Line인천.html"><img src="images/인천선.png"alt="인천선"></a>
+					</code>
 				</div>
                 <div class="clr"></div>
 			</section>

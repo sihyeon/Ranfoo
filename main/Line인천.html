@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="UTF-8">
     <head>
 		<meta charset="UTF-8"/>
@@ -13,21 +13,24 @@
         <link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link href='http://fonts.googleapis.com/css?family=Montserrat|Sail|Concert+One' rel='stylesheet' type='text/css' />
    <style type="text/css">
-    body
+     body
     {
         font-family: Verdana;
-        font-size: 8pt;
+        font-size: 9pt;
     }
 
     /* The main DIV for the map */
-    .subway-map
-    {
-        margin: 0;
-        width: 1200px;
-        height:760px;
-       
-    }
+    .sub
+	{
+	    width: 1024px;
+		height: 600px;
+	}	
 
+	.subway-map
+    {
+        width: 1024px;
+		height: 600px;
+    }
     /* Text labels */
     .text
     {
@@ -101,7 +104,7 @@
 		<script type="text/javascript" src="http://www.google.com/jsapi"></script>
 		<script type="text/javascript"></script>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
-        <script type="text/javascript" src="jquery.subwayMap-0.5.0.js"></script> 
+        <script type="text/javascript" src="js/jquery.subwayMap-0.5.0.js"></script> 
     	<script type="text/javascript">
         $(".subway-map").subwayMap({ debug: true });
     	</script>

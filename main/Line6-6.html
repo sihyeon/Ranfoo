@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="UTF-8">
     <head>
 		<meta charset="UTF-8"/>
@@ -13,21 +13,24 @@
         <link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link href='http://fonts.googleapis.com/css?family=Montserrat|Sail|Concert+One' rel='stylesheet' type='text/css' />
    <style type="text/css">
-    body
+       body
     {
         font-family: Verdana;
-        font-size: 8pt;
+        font-size: 9pt;
     }
 
     /* The main DIV for the map */
-    .subway-map
-    {
-        margin: 0;
-        width: 1200px;
-        height:760px;
-       
-    }
+    .sub
+	{
+	    width: 1024px;
+		height: 600px;
+	}	
 
+	.subway-map
+    {
+        width: 1024px;
+		height: 600px;
+    }
     /* Text labels */
     .text
     {
@@ -45,9 +48,12 @@
     </head>
     
     <body>
-
-			<section class="sub" id="sub1">
-			 <div class="subway-map" data-columns="50" data-rows="50" data-cellSize="25" data-legendId="legend" data-textClass="text" data-gridNumbers="true" data-grid="false" data-lineWidth="8">
+		<div id="wrap">
+    	<div class="btn">
+    	<a href="index.html" class="myButton">HOME</a>
+    	</div>
+		<section class="sub" id="sub1">
+		<div class="subway-map" data-columns="50" data-rows="50" data-cellSize="25" data-legendId="legend" data-textClass="text" data-gridNumbers="true" data-grid="false" data-lineWidth="8">
         <ul data-color="#cc6635" data-label="6호선"> 
         
            <li data-coords="4,6"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">봉화산</a></li>
@@ -81,7 +87,7 @@
             <li data-coords="22,14"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">망원</a></li>
             <li data-coords="20,14"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">마포구청</a></li>
             <li data-coords="18,14"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">월드컵\n경기장</a></li>
-            <li data-coords="16,14"data-marker="@interchange"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">디지털\n미디어시티</a></li>
+            <li data-coords="16,14"data-marker="@interchange"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">디지털\n미디어\n시티</a></li>
             <li data-coords="14,14"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">증산</a></li>
             <li data-coords="12,14"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">새절</a></li>
             
@@ -93,24 +99,22 @@
             <li data-coords="4,13"data-dir="W"></li>
             <li data-coords="4,15"></li>
             <li data-coords="5,16"data-dir="S"></li>
-            <li data-coords="5.1,16"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">독바위</a></li>
-            <li data-coords="6.5,16"></li>
-            <li data-coords="6.5,16"data-marker="@interchange"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">연신내</a></li>
-            <li data-coords="7.9,16"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">구산</a></li>
-            <li data-coords="10,14"></li>
+            <li data-coords="5,16"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">독바위</a></li>
+            <li data-coords="7,16"></li>
+            <li data-coords="7,16"data-marker="@interchange"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">연신내</a></li>
+            <li data-coords="8.5,16"><a href="http://jqueryui.com/demos/autocomplete/"><a href="http://jqueryui.com/demos/autocomplete/">구산</a></li>
+          	<li data-coords="10.2,14"></li>
         </ul>
-
-
-    </div>
-    <div id="legend"></div>
-			</section>
+		</div>
+		</section>
+        </div>
         </div>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.arctext.js"></script>
 		<script type="text/javascript" src="http://www.google.com/jsapi"></script>
 		<script type="text/javascript"></script>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
-        <script type="text/javascript" src="jquery.subwayMap-0.5.0.js"></script> 
+        <script type="text/javascript" src="js/jquery.subwayMap-0.5.0.js"></script> 
     	<script type="text/javascript">
         $(".subway-map").subwayMap({ debug: true });
     	</script>
