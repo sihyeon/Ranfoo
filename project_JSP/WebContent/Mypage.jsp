@@ -137,6 +137,8 @@
     </div>
   </fieldset>
 </form>
+	<h3>LOGINED!!!!!</h3>
+	<h3>Login ID: <%=(String)session.getAttribute("id") %></h3>
     </div>
 	<% } %>
   </div>

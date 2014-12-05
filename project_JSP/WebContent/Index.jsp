@@ -14,6 +14,7 @@
         <link rel="stylesheet" type="text/css" href="css/test.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link href='http://fonts.googleapis.com/css?family=Montserrat|Sail|Concert+One' rel='stylesheet' type='text/css' />
+	</head>
     <body>
         <div class="container">
 			<!-- Codrops top bar -->
@@ -26,7 +27,11 @@
 				<h1 id="headline">Ran.Food</h1>
 			<h2>Welcome to the Ranfoo Meeting</h2>
 				<p class="codrops-demos">
-                	<a href="loginpage.jsp">Login</a>
+					<% if (session.getAttribute("id") == null) { %>
+                		<a href="loginpage.jsp">Login</a>
+                	<% } else { %>
+                		<a href="SessionLogout.jsp">Logout</a>
+                	<% } %>
 					<a href="#sub1">How to use</a>
 					<a href="#sub2">Subway Map</a>
 					<a href="#sub3">My Page</a>
@@ -94,7 +99,13 @@
 				<div class="code">
 					<h4>You can edit your page</h4>
                     <p>개인정보, 소개글, Join 내역 확인</p>
+	<h3>LOGINED!!!!!</h3>
+	<h3>Login ID: <%=(String)session.getAttribute("id") %></h3>
+				<% if (session.getAttribute("id") == null) { %>
                     <code><a href="loginpage.jsp">Go to MY PAGE</a></code>
+                <% } else {  %>
+                	<code><a href="Mypage.jsp">GO to MY PAGE</a></code>
+                <% } %>
                     </div>
 				<div class="clr"></div>
 			</section>
