@@ -14,7 +14,7 @@
     <input type="text" class="login-input" placeholder="Email Adress" autofocus>
     <input type="password" class="login-input" placeholder="Password">
     <input type="submit" value="Lets Go" class="login-button">
-  <p class="login-lost"><a href="">아직 RANFOO의 회원이 아니신가요?</a></p>
+  <p class="login-lost"><a href="signUp.jsp">아직 RANFOO의 회원이 아니신가요?</a></p>
   </form>
 
 	
