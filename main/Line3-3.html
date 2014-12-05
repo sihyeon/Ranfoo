@@ -13,31 +13,44 @@
         <link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link href='http://fonts.googleapis.com/css?family=Montserrat|Sail|Concert+One' rel='stylesheet' type='text/css' />
    <style type="text/css">
-      body
+    body
     {
         font-family: Verdana;
         font-size: 9pt;
     }
-
+		.container
+	{
+		height:60px;
+		margin-top:10px;
+	}
+	#headline
+	{
+		height:20px;
+	}
     /* The main DIV for the map */
     .sub
 	{
 	    width: 1024px;
-		height: 600px;
+		height: 620px;
 	}	
 
 	.subway-map
     {
         width: 1024px;
 		height: 600px;
-    }
+    	margin-top:50px;
+		background:rgba(255,255,255,0.1)
+	}
     /* Text labels */
     .text
     {
         text-decoration: none;
         color: black;
     }
-
+	.text:hover
+	{
+		font-weight:bold;	
+	}
   
     .subway-map span
     {
@@ -48,10 +61,16 @@
     </head>
     
     <body>
-			<div id="wrap">
-    		<div class="btn">
-    			<a href="index.html" class="myButton">HOME</a>
-    		</div>
+  		<div id="wrap">
+    		<div class="container">
+				<header>
+                	<h1 id="headline">Ran.Food</h1>
+                	<h2>Welcome to the Ranfoo Meeting</h2>
+                	<div class="btn">
+                	<a href="index.html" class="myButton">HOME</a>
+                	</div><!--btn-->
+				</header>
+        		</div><!--container-->
 			<section class="sub" id="sub1">
 			 <div class="subway-map" data-columns="50" data-rows="50" data-cellSize="23" data-legendId="legend" data-textClass="text" data-gridNumbers="true" data-grid="false" data-lineWidth="8">
         <ul data-color="#ff7300" data-label="3호선">          
