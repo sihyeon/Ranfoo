@@ -1,14 +1,25 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="EUC-KR"%>
     <% session.invalidate(); %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>Insert title here</title>
+<meta charset="UTF-8">
+		<title>RANFOO</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" type="text/css" href="css/loginstyle.css" />
+</head>
 </head>
 <body>
-	<h3>로그아웃 되었습니다.</h3>
-	<a href="Index.jsp">Go BACK TO HOME</a>
+
+<form action="Index.jsp" method="post" class="login">
+    <h1 class="login-title">Good Bye!</h1>
+    <h3>Your account is successfully logout!</h3>
+    <input type="submit" value="Go Back to Home" class="login-button">
+  </form>
+
+	
 </body>
 </html>

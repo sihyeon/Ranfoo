@@ -7,9 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" type="text/css" href="css/loginstyle.css" />
+    </head>
 <form class="login">
     <h1 class="login-title">Quick Sign up</h1>
-    <input type="text" class="login-input" placeholder="Email Adress" autofocus>
+    <input type="text" class="login-input" placeholder="Name" autofocus>
+    <input type="text" class="login-input" placeholder="Email Adress" >
     <input type="password" class="login-input" placeholder="Password">
     <input type="password" class="login-input" placeholder="Password Check">
     <input type="text" class="login-input" placeholder="Birth Day: yyyy-mm-dd">
