@@ -32,12 +32,13 @@
 		  <form class="form-vertical" method="post">
 			<fieldset>
 				<div id="legend">
-					<legend>You can Join this Station in any time.</legend>
+					You can Join this Station in any time.
 				</div>
 				<div class ="form-vertical">
-				<label class="col-lg-3 control-label">Join Station : 
+				<label class="col-lg-12 control-label">Join Station : 
 				</label>
-				<div class = "col-lg-3">
+				</div>
+				<div class = "col-lg-12">
     		<ul>
       	<li>12:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="#" class="myButton">Join</a>
       	&nbsp;&nbsp;&nbsp;&nbsp;13:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="#" class="myButton">Join</a></li><br/>
@@ -52,7 +53,9 @@
       	<li>22:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="#" class="myButton">Join</a>
       	&nbsp;&nbsp;&nbsp;&nbsp;23:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="#" class="myButton">Join</a></li><br/>
       	<li>24:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="#" class="myButton">Join</a></li><br/>
-		    <a href="#" class="myButton">SUBMIT</a>
+		   <div class="btn">
+		    <a href="index.html" class="Button">HOME</a>
+		    </div>
 		    </ul>
 				</div>
 				</fieldset>

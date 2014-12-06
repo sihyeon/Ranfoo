@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="UTF-8">
+    <head>
+		<meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>Start and enjoy your RanFoo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="arctext.js" />
+        <meta name="keywords" content="arc, letters, words, rotate, warp, circle, curve, along, path, jquery, css3, transform" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/test.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link href='http://fonts.googleapis.com/css?family=Montserrat|Sail|Concert+One' rel='stylesheet' type='text/css' />
+  <style type="text/css">
+    body
+    {
+        font-family: Verdana;
+        font-size: 9pt;
+    }
+		.container
+	{
+		height:60px;
+		margin-top:10px;
+	}
+	#headline
+	{
+		height:20px;
+	}
+    /* The main DIV for the map */
+    .sub
+	{
+	    width: 1024px;
+		height: 620px;
+	}	
+
+	.subway-map
+    {
+        width: 1024px;
+		height: 600px;
+    	margin-top:50px;
+		background:rgba(255,255,255,0.1)
+	}
+    /* Text labels */
+    .text
+    {
+        text-decoration: none;
+        color: black;
+    }
+	.text:hover
+	{
+		font-weight:bold;	
+	}
+  
+    .subway-map span
+    {
+        margin: 5px 5px 5px 0;
+    }
+ 
+    </style>
+    </head>
+    
+    <body>
+  		<div id="wrap">
+    		<div class="container">
+				<header>
+                	<h1 id="headline">Ran.Food</h1>
+                	<h2>Welcome to the Ranfoo Meeting</h2>
+                	<div class="btn">
+                	<a href="index.html" class="myButton">HOME</a>
+                	</div><!--btn-->
+				</header>
+        		</div><!--container-->
+		<section class="sub" id="sub1">
+		<div class="subway-map" data-columns="50" data-rows="50" data-cellSize="25" data-legendId="legend" data-textClass="text" data-gridNumbers="true" data-grid="false" data-lineWidth="8">
+        <ul data-color="#cc6635" data-label="6호선"> 
+        
+           <li data-coords="4,6"><a href="JoinPage.jsp">봉화산</a></li>
+            <li data-coords="6,6"><a href="JoinPage.jsp">화랑대</a></li>
+            <li data-coords="8,6"data-marker="@interchange"><a href="JoinPage.jsp">태릉입구</a></li>
+            <li data-coords="10,6"data-marker="@interchange"><a href="JoinPage.jsp">석계</a></li>
+            <li data-coords="12,6"><a href="JoinPage.jsp">돌곶이</a></li>
+            <li data-coords="14,6"><a href="JoinPage.jsp">상월곡</a></li>
+            <li data-coords="16,6"><a href="JoinPage.jsp">월곡</a></li>
+            <li data-coords="18,6"><a href="JoinPage.jsp">안암</a></li>
+            <li data-coords="20,6"><a href="JoinPage.jsp">보문</a></li>
+            <li data-coords="22,6"><a href="JoinPage.jsp">창신</a></li>
+            <li data-coords="24,6"data-marker="@interchange"><a href="JoinPage.jsp">동묘앞</a></li>
+            <li data-coords="26,6"data-marker="@interchange"><a href="JoinPage.jsp">신당</a></li>
+            <li data-coords="28,6"data-marker="@interchange"><a href="JoinPage.jsp">청구</a></li>
+            <li data-coords="30,6"data-marker="@interchange"><a href="JoinPage.jsp">약수</a></li>
+            <li data-coords="32,6"><a href="JoinPage.jsp">버티고개</a></li>
+            <li data-coords="34,6"><a href="JoinPage.jsp">한강진</a></li>
+            
+            <li data-coords="35,8"><a href="JoinPage.jsp">이태원</a></li>
+            <li data-coords="35,10"><a href="JoinPage.jsp">녹사평</a></li>
+            <li data-coords="35,12"></li>
+            <li data-coords="35,12"data-marker="@interchange"><a href="JoinPage.jsp">삼각지</a></li>
+            
+            <li data-coords="34,14"><a href="JoinPage.jsp">효창\n공원앞</a></li>
+            <li data-coords="32,14"data-marker="@interchange"><a href="JoinPage.jsp">공덕</a></li>
+            <li data-coords="30,14"><a href="JoinPage.jsp">대흥</a></li>
+            <li data-coords="28,14"><a href="JoinPage.jsp">광흥창</a></li>
+            <li data-coords="26,14"><a href="JoinPage.jsp">상수</a></li>
+            <li data-coords="24,14"data-marker="@interchange"><a href="JoinPage.jsp">합정</a></li>
+            <li data-coords="22,14"><a href="JoinPage.jsp">망원</a></li>
+            <li data-coords="20,14"><a href="JoinPage.jsp">마포구청</a></li>
+            <li data-coords="18,14"><a href="JoinPage.jsp">월드컵\n경기장</a></li>
+            <li data-coords="16,14"data-marker="@interchange"><a href="JoinPage.jsp">디지털\n미디어\n시티</a></li>
+            <li data-coords="14,14"><a href="JoinPage.jsp">증산</a></li>
+            <li data-coords="12,14"><a href="JoinPage.jsp">새절</a></li>
+            
+            <li data-coords="10,14"><a href="JoinPage.jsp">응암</a></li>
+            <li data-coords="8,12"><a href="JoinPage.jsp">역촌</a></li>
+            <li data-coords="6,12"></li>
+            <li data-coords="6,12"data-marker="@interchange"><a href="JoinPage.jsp">불광</a></li>
+            <li data-coords="5,12"></li>
+            <li data-coords="4,13"data-dir="W"></li>
+            <li data-coords="4,15"></li>
+            <li data-coords="5,16"data-dir="S"></li>
+            <li data-coords="5,16"><a href="JoinPage.jsp">독바위</a></li>
+            <li data-coords="7,16"></li>
+            <li data-coords="7,16"data-marker="@interchange"><a href="JoinPage.jsp">연신내</a></li>
+            <li data-coords="8.5,16"><a href="JoinPage.jsp">구산</a></li>
+          	<li data-coords="10.2,14"></li>
+        		</ul>
+						</div>
+						</section>
+        </div>
+        
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.arctext.js"></script>
+		<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+		<script type="text/javascript"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.subwayMap-0.5.0.js"></script> 
+    	<script type="text/javascript">
+        $(".subway-map").subwayMap({ debug: true });
+    	</script>
+    </body>
+</html>

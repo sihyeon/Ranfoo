@@ -9,6 +9,7 @@
          <link rel="stylesheet" type="text/css" href="css/loginstyle.css" />
 </head>
 <body>
+
 <form class="login">
     <h1 class="login-title">Welcome to the Ranfoo</h1>
     <input type="text" class="login-input" placeholder="Email Adress" autofocus>
