@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+    <head>
+		<meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>Start and enjoy your RanFoo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="arctext.js" />
+        <meta name="keywords" content="arc, letters, words, rotate, warp, circle, curve, along, path, jquery, css3, transform" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/test.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link href='http://fonts.googleapis.com/css?family=Montserrat|Sail|Concert+One' rel='stylesheet' type='text/css' />
+        
+   <style type="text/css">
+    body
+    {
+        font-family: Verdana;
+        font-size: 9pt;
+    }
+		.container
+	{
+		height:60px;
+		margin-top:10px;
+	}
+	#headline
+	{
+		height:20px;
+	}
+    /* The main DIV for the map */
+    .sub
+	{
+	    width: 1024px;
+		height: 620px;
+	}	
+
+	.subway-map
+    {
+        width: 1024px;
+		height: 600px;
+    	margin-top:50px;
+		background:rgba(255,255,255,0.1)
+	}
+    /* Text labels */
+    .text
+    {
+        text-decoration: none;
+        color: black;
+    }
+	.text:hover
+	{
+		font-weight:bold;	
+	}
+  
+    .subway-map span
+    {
+        margin: 5px 5px 5px 0;
+    }
+ 
+    </style>
+    </head>
+    
+    <body>
+  		<div id="wrap">
+    		<div class="container">
+				<header>
+                	<h1 id="headline">Ran.Food</h1>
+                	<h2>Welcome to the Ranfoo Meeting</h2>
+                	<div class="btn">
+                	<a href="index.html" class="myButton">HOME</a>
+                	</div><!--btn-->
+				</header>
+        		</div><!--container-->
+            <section class="sub" id="sub1">
+                <div class="subway-map" data-columns="50" data-rows="50" data-cellSize="21" data-legendId="legend" data-textClass="text" data-gridNumbers="true" data-grid="false" data-lineWidth="8">
+                    <ul data-color="#003499" data-label="1호선">
+                           <li data-coords="2,4"><a href="JoinPage.jsp">인천</a></li>
+                           <li data-coords="4,4"><a href="JoinPage.jsp">동인천</a></li>
+                           <li data-coords="6,4"><a href="JoinPage.jsp">도원</a></li>
+                           <li data-coords="8,4"><a href="JoinPage.jsp">제물포</a></li>
+                           <li data-coords="10,4"><a href="JoinPage.jsp">도화</a></li>
+                           <li data-coords="12,4"><a href="JoinPage.jsp">주안</a></li>
+                           <li data-coords="14,4"><a href="JoinPage.jsp">간석</a></li>
+                           <li data-coords="16,4"><a href="JoinPage.jsp">동암</a></li>
+                           <li data-coords="18,4"><a href="JoinPage.jsp">백운</a></li>
+                           <li data-coords="20,4"data-marker="@interchange"><a href="JoinPage.jsp">부평</a></li>
+                           <li data-coords="22,4"><a href="JoinPage.jsp">부개</a></li>
+                           <li data-coords="24,4"><a href="JoinPage.jsp">송내</a></li>
+                           <li data-coords="26,4"><a href="JoinPage.jsp">중동</a></li>
+                           <li data-coords="28,4"><a href="JoinPage.jsp">부천</a></li>
+                           <li data-coords="30,4"><a href="JoinPage.jsp">소사</a></li>
+                           <li data-coords="32,4"><a href="JoinPage.jsp">역곡</a></li>
+                           <li data-coords="34,4"data-marker="@interchange"><a href="JoinPage.jsp">온수</a></li>
+                           <li data-coords="36,4"><a href="JoinPage.jsp">오류</a></li>
+                           <li data-coords="38,4"><a href="JoinPage.jsp">개봉</a></li>
+                           <li data-coords="40,4"><a href="JoinPage.jsp">구일</a></li>
+                           <li data-coords="42,4"data-marker="@interchange"><a href="JoinPage.jsp">구로</a></li>
+                           <li data-coords="44,4"></li>
+                           <li data-coords="42,4"></li>
+                           <li data-coords="42,6"></li>
+                           <li data-coords="42,6"data-marker="@interchange"><a href="JoinPage.jsp">가산\n디지털\n단지</a></li>
+                           <li data-coords="40,7"><a href="JoinPage.jsp">독산</a></li>
+                           <li data-coords="38,8"></li>
+                           <li data-coords="38,8"data-marker="@interchange"><a href="JoinPage.jsp">금천\n구청</a></li>
+                           <li data-coords="40,9"><a href="JoinPage.jsp">광명</a></li>
+                           <li data-coords="38,8"></li>
+                           
+                           <li data-coords="36,8"><a href="JoinPage.jsp">석수</a></li>
+                           <li data-coords="34,8"><a href="JoinPage.jsp">관악</a></li>
+                           <li data-coords="32,8"><a href="JoinPage.jsp">안양</a></li>
+                           <li data-coords="30,8"><a href="JoinPage.jsp">명학</a></li>
+                           <li data-coords="28,8"><a href="JoinPage.jsp">금정</a></li>
+                           <li data-coords="26,8"><a href="JoinPage.jsp">군포</a></li>
+                           <li data-coords="24,8"><a href="JoinPage.jsp">당정</a></li>
+                           <li data-coords="22,8"><a href="JoinPage.jsp">의왕</a></li>
+                           <li data-coords="20,8"><a href="JoinPage.jsp">성균관대</a></li>
+                           <li data-coords="18,8"><a href="JoinPage.jsp">화서</a></li>
+                           <li data-coords="16,8"></li>
+                           <li data-coords="16,8"data-marker="@interchange"><a href="JoinPage.jsp">수원</a></li>
+                           <li data-coords="14,8"><a href="JoinPage.jsp">세류</a></li>
+                           <li data-coords="12,8"data-marker="@interchange"><a href="JoinPage.jsp">병점</a></li>
+                           <li data-coords="10,8"><a href="JoinPage.jsp">세마</a></li>
+                           <li data-coords="8,8"><a href="JoinPage.jsp">오산대</a></li>
+                           <li data-coords="7,10"><a href="JoinPage.jsp">오산</a></li>
+                           <li data-coords="7,12"><a href="JoinPage.jsp">진위</a></li>
+                           <li data-coords="7,14"><a href="JoinPage.jsp">송탄</a></li>
+                           <li data-coords="8,16"><a href="JoinPage.jsp">서정리</a></li>
+                           <li data-coords="9,18"><a href="JoinPage.jsp">지제</a></li>
+                           <li data-coords="11,18"><a href="JoinPage.jsp">평택</a></li>
+                           <li data-coords="13,18"><a href="JoinPage.jsp">성환</a></li>
+                           <li data-coords="15,18"><a href="JoinPage.jsp">직산</a></li>
+                           <li data-coords="17,18"><a href="JoinPage.jsp">두정</a></li>
+                           <li data-coords="19,18"><a href="JoinPage.jsp">천안</a></li>
+                           <li data-coords="19,20"><a href="JoinPage.jsp">봉명</a></li>
+                           <li data-coords="19,22"><a href="JoinPage.jsp">쌍용</a></li>
+                           <li data-coords="21,22"><a href="JoinPage.jsp">아산</a></li>
+                           <li data-coords="23,22"><a href="JoinPage.jsp">배방</a></li>
+                           <li data-coords="25,22"><a href="JoinPage.jsp">온양\n온천</a></li>
+                           <li data-coords="27,22"><a href="JoinPage.jsp">신창</a></li>
+                           <li data-coords="19,22"></li>
+                           <li data-coords="19,18"></li>
+                           <li data-coords="9,18"></li>
+                           <li data-coords="8,16"></li>
+                           <li data-coords="7,14"></li>
+                           <li data-coords="7,10"></li>
+                           <li data-coords="8,8"></li>
+                           <li data-coords="38,8"></li>
+                           <li data-coords="40,7"></li>
+                           <li data-coords="42,6"></li>
+                           <li data-coords="42,4"></li>
+                           <li data-coords="44,4"></li>
+                           <li data-coords="44,4"data-marker="@interchange"><a href="JoinPage.jsp">신도림</a></li>
+                           <li data-coords="46,4"><a href="JoinPage.jsp">영등포</a></li>
+                           <li data-coords="47,6"></li>
+                           <li data-coords="47,6"data-marker="@interchange"><a href="JoinPage.jsp">신길</a></li>
+                           <li data-coords="47,8"><a href="JoinPage.jsp">대방</a></li>
+                           <li data-coords="47,10"></li>
+                           <li data-coords="47,10"data-marker="@interchange"><a href="JoinPage.jsp">노량진</a></li>
+                           <li data-coords="46,12"></li>
+                           <li data-coords="46,12"data-marker="@interchange"><a href="JoinPage.jsp">용산</a></li>
+                           <li data-coords="44,12"><a href="JoinPage.jsp">남영</a></li>
+                           <li data-coords="42,12"data-marker="@interchange"><a href="JoinPage.jsp">서울역</a></li>
+                           <li data-coords="40,12"data-marker="@interchange"><a href="JoinPage.jsp">시청</a></li>
+                           <li data-coords="38,12"><a href="JoinPage.jsp">종각</a></li>
+                           <li data-coords="36,12"data-marker="@interchange"><a href="JoinPage.jsp">종로\n3가</a></li>
+                           <li data-coords="34,12"><a href="JoinPage.jsp">종로\n5가</a></li>
+                           <li data-coords="32,12"data-marker="@interchange"><a href="JoinPage.jsp">동대문</a></li>
+                           <li data-coords="30,12"data-marker="@interchange"><a href="JoinPage.jsp">동묘앞</a></li>
+                           <li data-coords="28,12"data-marker="@interchange"><a href="JoinPage.jsp">신설동</a></li>
+                           <li data-coords="26,12"><a href="JoinPage.jsp">제기동</a></li>
+                           <li data-coords="26,14"></li>
+                           <li data-coords="26,14"data-marker="@interchange"><a href="JoinPage.jsp">청량리</a></li>
+                           <li data-coords="26,16"data-marker="@interchange"><a href="JoinPage.jsp">회기</a></li>
+                           <li data-coords="26,18"><a href="JoinPage.jsp">외대앞</a></li>
+                           <li data-coords="28,19"><a href="JoinPage.jsp">신이문</a></li>
+                           <li data-coords="30,19"></li>
+                           <li data-coords="30,19"data-marker="@interchange"><a href="JoinPage.jsp">석계</a></li>
+                           <li data-coords="32,19"data-marker="@interchange"><a href="JoinPage.jsp">광운대</a></li>
+                           <li data-coords="34,19"><a href="JoinPage.jsp">월계</a></li>
+                           <li data-coords="36,19"><a href="JoinPage.jsp">녹천</a></li>
+                           <li data-coords="38,19"data-marker="@interchange"><a href="JoinPage.jsp">창동</a></li>
+                           <li data-coords="40,19"><a href="JoinPage.jsp">방학</a></li>
+                           <li data-coords="42,19"><a href="JoinPage.jsp">도봉</a></li>
+                           <li data-coords="44,19"></li>
+                           <li data-coords="44,19"data-marker="@interchange"><a href="JoinPage.jsp">도봉산</a></li>
+                           <li data-coords="46,20"><a href="JoinPage.jsp">망월사</a></li>
+                           <li data-coords="46,22"></li>
+                           <li data-coords="46,22"data-marker="@interchange"><a href="JoinPage.jsp">회룡</a></li>
+                           <li data-coords="46,24"><a href="JoinPage.jsp">의정부</a></li>
+                           <li data-coords="44,25"><a href="JoinPage.jsp">가능</a></li>
+                           <li data-coords="42,25"><a href="JoinPage.jsp">녹양</a></li>
+                           <li data-coords="40,25"><a href="JoinPage.jsp">양주</a></li>
+                           <li data-coords="38,25"><a href="JoinPage.jsp">덕계</a></li>
+                           <li data-coords="36,25"><a href="JoinPage.jsp">덕정</a></li>
+                           <li data-coords="34,25"><a href="JoinPage.jsp">지행</a></li>
+                           <li data-coords="32,25"><a href="JoinPage.jsp">동두천\n중앙</a></li>
+                           <li data-coords="30,25"><a href="JoinPage.jsp">보산</a></li>
+                           <li data-coords="28,25"><a href="JoinPage.jsp">동두천</a></li>
+                           <li data-coords="26,25"><a href="JoinPage.jsp">소요산</a></li>
+                    </ul>
+                </div><!--subway-map-->
+            </section> 
+    </div><!--wrap-->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.arctext.js"></script>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.subwayMap-0.5.0.js"></script> 
+    <script type="text/javascript">
+    $(".subway-map").subwayMap({ debug: true });
+    </script>
+    </body>
+</html>
