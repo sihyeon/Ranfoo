@@ -10,10 +10,10 @@
 </head>
 <body>
 
-<form class="login">
+<form action="SessionLogin.jsp" method="post" class="login">
     <h1 class="login-title">Welcome to the Ranfoo</h1>
-    <input type="text" class="login-input" placeholder="Email Adress" autofocus>
-    <input type="password" class="login-input" placeholder="Password">
+    <input type="text" name="id" class="login-input" placeholder="Email Adress" autofocus>
+    <input type="password" name="pwd" class="login-input" placeholder="Password">
     <input type="submit" value="Lets Go" class="login-button">
   <p class="login-lost"><a href="">아직 RANFOO의 회원이 아니신가요?</a></p>
   </form>

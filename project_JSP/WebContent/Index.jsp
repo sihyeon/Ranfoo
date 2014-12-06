@@ -1,10 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
     
-    <%
-    boolean logined = false;
     
-    %>
 <html lang="UTF-8">
     <head>
 		<meta charset="UTF-8"/>
@@ -17,7 +14,14 @@
         <link rel="shortcut icon" href="../favicon.ico"> 
         <link rel="stylesheet" type="text/css" href="css/test.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
-		<link href='http://fonts.googleapis.com/css?family=Montserrat|Sail|Concert+One' rel='stylesheet' type='text/css' />
+				<link href='http://fonts.googleapis.com/css?family=Montserrat|Sail|Concert+One' rel='stylesheet' type='text/css' />
+   			
+   			<script launguage='JAVASCRIPT'>
+   			function loginalert(){
+   				alert("로그인이 필요한 서비스 입니다."); 
+   			}
+   			</script>
+   			
     <body>
      <div class="container">
 			<!-- Codrops top bar -->
@@ -30,7 +34,11 @@
 				<h1 id="headline">Ran.Food</h1>
 			<h2>Welcome to the Ranfoo Meeting</h2>
 				<p class="codrops-demos">
-                	<a href="#sub0">Login</a>
+				<% if(session.getAttribute("id") == null) { %>
+            <a href="loginpage.jsp">Login</a>
+        <% } else { %>
+        		<a href="SessionLogout.jsp">Logout</a>
+        <% } %>
 					<a href="#sub1">How to use</a>
 					<a href="#sub2">Subway Map</a>
 					<a href="#sub3">My Page</a>
@@ -66,7 +74,30 @@
 				<div class="code">
 					<h4>Click the Line</h4>
 				  <p>Ranfoo 할 지하철 노선을 선택하세요.</p>
-					<code> 				<a href="Line1-1.html"><img src="images/1.png"alt="1호선"></a>
+					<code>
+										<% if (session.getAttribute("id") == null ) { %>
+													<a href="loginpage.jsp" onclick="loginalert()"><img src="images/1.png"alt="1호선"></a>
+                    &nbsp;<a href="loginpage.jsp" onclick="loginalert()"><img src="images/2.png"alt="2호선"></a>
+                    &nbsp;<a href="loginpage.jsp" onclick="loginalert()"><img src="images/3.png"alt="3호선"></a>
+                    &nbsp;<a href="loginpage.jsp" onclick="loginalert()"><img src="images/4.png"alt="4호선"></a>
+                    &nbsp;<a href="loginpage.jsp" onclick="loginalert()"><img src="images/5.png"alt="5호선"></a>
+                    &nbsp;<a href="loginpage.jsp" onclick="loginalert()"><img src="images/6.png"alt="6호선"></a>
+                    &nbsp;<a href="loginpage.jsp" onclick="loginalert()"><img src="images/7.png"alt="7호선"></a>
+                    &nbsp;<a href="loginpage.jsp" onclick="loginalert()"><img src="images/8.png"alt="8호선"></a>
+                    &nbsp;<a href="loginpage.jsp" onclick="loginalert()"><img src="images/9.png"alt="9호선"></a>
+                    <br /><a href="loginpage.jsp" onclick="loginalert()"><img src="images/11.png"alt="신분당선"></a>
+                    &nbsp;<a href="loginpage.jsp" onclick="loginalert()"><img src="images/12.png"alt="공항선"></a>
+                    &nbsp;<a href="loginpage.jsp" onclick="loginalert()"><img src="images/13.png"alt="중앙선"></a>
+                    &nbsp;<a href="loginpage.jsp" onclick="loginalert()"><img src="images/14.png"alt="의정부선"></a>
+                    &nbsp;<a href="loginpage.jsp" onclick="loginalert()"><img src="images/15.png"alt="경의선"></a>
+                    <br /><a href="loginpage.jsp" onclick="loginalert()"><img src="images/16.png"alt="경춘선"></a>
+                    &nbsp;<a href="loginpage.jsp" onclick="loginalert()"><img src="images/17.png"alt="에버랜드선"></a>
+                    &nbsp;<a href="loginpage.jsp" onclick="loginalert()"><img src="images/18.png"alt="수인선"></a>
+                    &nbsp;<a href="loginpage.jsp" onclick="loginalert()"><img src="images/19.png"alt="분당선"></a>
+                    &nbsp;<a href="loginpage.jsp" onclick="loginalert()"><img src="images/20.png"alt="인천선"></a>
+                    
+                    <% } else { %>
+													<a href="Line1-1.html"><img src="images/1.png"alt="1호선"></a>
                     &nbsp;<a href="Line2-2.html"><img src="images/2.png"alt="2호선"></a>
                     &nbsp;<a href="Line3-3.html"><img src="images/3.png"alt="3호선"></a>
                     &nbsp;<a href="Line4-4.html"><img src="images/4.png"alt="4호선"></a>
@@ -85,8 +116,8 @@
                     &nbsp;<a href="Line18.html"><img src="images/18.png"alt="수인선"></a>
                     &nbsp;<a href="Line19.html"><img src="images/19.png"alt="분당선"></a>
                     &nbsp;<a href="Line20.html"><img src="images/20.png"alt="인천선"></a>
-
-                    </code>
+                    <% } %>
+       		</code>
 				</div>
                 <div class="clr"></div>
 			</section>
@@ -98,7 +129,11 @@
 				<div class="code">
 					<h4>You can edit your page</h4>
                     <p>개인정보, 소개글, Join 내역 확인</p>
-                    <code><a href="Mypage.jsp">Go to the My Page</a></code>
+                    <% if(session.getAttribute("id") == null) { %>
+                    	<code><a href="loginpage.jsp" onclick="loginalert()">Go to MY PAGE</a></code>
+                    <% } else { %>
+                    	<code><a href="Mypage.jsp">Go to MY PAGE</a></code>
+                    <% } %>
                     </div>
 				<div class="clr"></div>
 			</section>

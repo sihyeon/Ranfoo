@@ -40,19 +40,19 @@
 				</div>
 				<div class = "col-lg-12">
     		<ul>
-      	<li>12:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="#" class="myButton">Join</a>
-      	&nbsp;&nbsp;&nbsp;&nbsp;13:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="#" class="myButton">Join</a></li><br/>
-      	<li>14:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="#" class="myButton">Join</a>
-      	&nbsp;&nbsp;&nbsp;&nbsp;15:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="#" class="myButton">Join</a></li><br/>
-      	<li>16:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="#" class="myButton">Join</a>
-      	&nbsp;&nbsp;&nbsp;&nbsp;17:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="#" class="myButton">Join</a></li><br/>
-      	<li>18:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="#" class="myButton">Join</a>
-      	&nbsp;&nbsp;&nbsp;&nbsp;19:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="#" class="myButton">Join</a></li><br/>
-      	<li>20:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="#" class="myButton">Join</a>
-      	&nbsp;&nbsp;&nbsp;&nbsp;21:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="#" class="myButton">Join</a></li><br/>
-      	<li>22:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="#" class="myButton">Join</a>
-      	&nbsp;&nbsp;&nbsp;&nbsp;23:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="#" class="myButton">Join</a></li><br/>
-      	<li>24:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="#" class="myButton">Join</a></li><br/>
+      	<li>12:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a>
+      	&nbsp;&nbsp;&nbsp;&nbsp;13:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a></li><br/>
+      	<li>14:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a>
+      	&nbsp;&nbsp;&nbsp;&nbsp;15:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a></li><br/>
+      	<li>16:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a>
+      	&nbsp;&nbsp;&nbsp;&nbsp;17:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a></li><br/>
+      	<li>18:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a>
+      	&nbsp;&nbsp;&nbsp;&nbsp;19:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a></li><br/>
+      	<li>20:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a>
+      	&nbsp;&nbsp;&nbsp;&nbsp;21:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a></li><br/>
+      	<li>22:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a>
+      	&nbsp;&nbsp;&nbsp;&nbsp;23:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a></li><br/>
+      	<li>24:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a></li><br/>
 		   <div class="btn">
 		    <a href="index.html" class="Button">HOME</a>
 		    </div>
