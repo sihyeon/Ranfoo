@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@page import="java.sql.*" %>
+<%@page import="station.*" %>
+<%@page import="java.util.*" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,7 +17,6 @@
   </style>
 </head>
 <body>
-
   <div class="container">
 		<div id="header" class="ribbon" >
              <h1><a>Are you Join this Station?</a></h1>
@@ -24,6 +26,7 @@
 					You can Join this Station in any time.
 				</div>
 				<div class ="form-vertical">
+				
 				<label class="col-lg-12 control-label">Join Station : 
 				</label>
 				</div>
@@ -38,10 +41,11 @@
       	<li>18:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a>
       	&nbsp;&nbsp;&nbsp;&nbsp;19:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a></li><br/>
       	<li>20:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a>
-      	&nbsp;&nbsp;&nbsp;&nbsp;21:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a></li><br/>
+      	&nbsp;&nbsp;&nbsp;&nbsp;21:00  &nbsp;&nbsp;인원:  명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a></li><br/>
       	<li>22:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a>
       	&nbsp;&nbsp;&nbsp;&nbsp;23:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a></li><br/>
       	<li>24:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a></li><br/>
+      	
 		   <div class="btn">
 		    <a href="index.html" class="Button">HOME</a>
 		    </div>
@@ -53,25 +57,19 @@
   </div>
 </body>
 <script type="text/javascript">
-		function receive() {
-			// Ajax로 마지막 받은 번호 이후의 메시지를 json으로 받음.
+	function receive() {
 	
-			$.get('StationServlet', {
-
-			}, function(data) {
-				// 전달받은 JSON을 파싱/처리
-				$(data.msgs).each(
-						function(i, item) {
-							// 각 메시지를 해당위치에 추가
-							$(".col-lg-3 control-label").append(item.station + "역  ");
-						});
-			});
-		}
-		$(function() {
-			$(".mybutton").click(function() {
-				
+		$.get('StationServlet', {
+		}, function(data) {
+			// 전달받은 JSON을 파싱/처리
+	
+			$(data.msgs).each(
+				function(i, item) {
+					// 각 메시지를 해당위치에 추가
+					
 			});
 		});
-	</script>
+	}
+</script>
 </html>
 
