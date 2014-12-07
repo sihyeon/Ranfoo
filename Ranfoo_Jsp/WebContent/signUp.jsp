@@ -4,6 +4,7 @@
     
 <%
 	String errorMsg = null;
+	String actionURL = null;
 	
 	Connection conn = null;
 	PreparedStatement stmt = null;
@@ -20,57 +21,18 @@
 	String pwd = "";
 	String birth = "";
 	
-	List<String> errorMsg = new ArrayList<String>();
-	
 	int id=0;
 	try {
 		id = Integer.parseInt(request.getParameter("id"));
 	} catch (Exception e) {}
 	
-	if (id>0) { %>
+	if (id>0) {
+		actionURL="index.jsp";
+	%>
 		alert("이미 있는 ID 입니다.");
 	<%
 	} else {
-		userid=request.getParameter("USER_ID");
-		pwd=request.getParameter("USER_PWD");
-		name=request.getParameter("USER_NAME");
-		birth=request.getParameter("USER_BIRTH");
-		
-		int result=0;
-		
-		if(userid==null || userid.trim().length()==0) {
-			errorMsg.add("ID를 입력해주세요.");
-		}
-		if(pwd==null || pwd.length()==0) {
-			errorMsg.add("비밀번호를 입력하세요.");
-		}
-		if(name==null || name.trim().length()==0) {
-			errorMsg.add("이름을 입력해주세요.");
-		}
-		if(errorMsg.size()==0) {
-			try{
-				conn = DriverManager.getConnection(dbURL, dbUser, dbPWD);
-				stmt = conn.prepareStatement(
-						"INSERT INTO USER(USER_ID, USER_PWD, USER_NAME, USER_BIRTH) " +
-						"VALUES(?, ?, ?, ?)"
-						);
-				stmt.setString(1, userid);
-				stmt.setString(2, pwd);
-				stmt.setString(3, name);
-				stmt.setString(4, birth);
-				
-				result = stmt.executeUpdate();
-				if(result != 1) {
-					errorMsg.add("등록에 실패했습니다.");
-				}
-			} catch (SQLException e) {
-				errorMsg.add("SQL에러: " + e.getMessage());
-			} finally {
-				if (rs!=null) try{rs.close();} catch(SQLExeption e) {}
-				if (stmt!=null) try{stmt.close();} catch(SQLExeption e) {}
-				if (conn!=null) try{conn.close();} catch(SQLExeption e) {}
-			}
-		}
+		actionURL="register.jsp";
 	}
 
 %>
@@ -83,12 +45,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" type="text/css" href="css/loginstyle.css" />
     </head>
-<form class="login">
+<form action="<%=actionURL %>" class="login">
     <h1 class="login-title">Quick Sign up</h1>
-    <input type="text" class="login-input" placeholder="Name" autofocus>
-    <input type="text" class="login-input" placeholder="Email Adress" >
-    <input type="password" class="login-input" placeholder="Password">
-    <input type="password" class="login-input" placeholder="Password Check">
-    <input type="text" class="login-input" placeholder="Birth Day: yyyy-mm-dd">
+    <input type="text" name="name" class="login-input" placeholder="Name" autofocus>
+    <input type="text" name="userid" class="login-input" placeholder="ID" >
+    <input type="password" name="pwd" class="login-input" placeholder="Password">
+    <input type="password" name="pwdCheck" class="login-input" placeholder="Password Check">
+    <input type="text" name="birth" class="login-input" placeholder="Birth Day: yyyy-mm-dd">
     <input type="submit" value="Sign up" class="login-button">
 </form>
