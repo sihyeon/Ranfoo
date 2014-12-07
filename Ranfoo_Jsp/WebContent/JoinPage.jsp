@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@page import="java.sql.*" %>
+<%@page import="java.util.*" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,19 +16,7 @@
   </style>
 </head>
 <body>
-
   <div class="container">
-	<%	if (request.getMethod() == "POST") { %>
-		 <div class="well">
-		  <ul>
-		    <li>신청역 : <%=request.getParameter("station")%></li>
-		    <li>시간 : <%=request.getParameter("time")%></li>
-		    <li>인원 : <%=request.getParameter("membernum")%></li>
-		    <li>Join : <%=request.getParameter("join")%></li>
-		    </ul>
-		 </div>
-  <%} else { %>
-  <br>
 		<div id="header" class="ribbon" >
              <h1><a>Are you Join this Station?</a></h1>
 		  <form class="form-vertical" method="post">
@@ -35,24 +25,54 @@
 					You can Join this Station in any time.
 				</div>
 				<div class ="form-vertical">
-				<label class="col-lg-12 control-label">Join Station : 
+				<% 
+					Connection conn = null;
+					PreparedStatement stmt = null;
+					ResultSet rs = null;
+					
+					String dbUrl = "jdbc:mysql://117.17.158.70/WAAP";
+					String dbUser = "next9267";
+					String dbPassword = "1234";
+					
+					try {
+						Class.forName("com.mysql.jdbc.Driver");
+						
+						conn = DriverManager.getConnection(dbUrl, dbUser, dbPassword);
+						stmt = conn.prepareStatement("SELECT * FROM station");
+						rs = stmt.executeQuery();
+	
+						while (rs.next()) {
+				%>
+				<label class="col-lg-12 control-label">Join Station : <%= rs.getString("station") %>
 				</label>
 				</div>
 				<div class = "col-lg-12">
     		<ul>
-      	<li>12:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a>
-      	&nbsp;&nbsp;&nbsp;&nbsp;13:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a></li><br/>
-      	<li>14:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a>
-      	&nbsp;&nbsp;&nbsp;&nbsp;15:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a></li><br/>
-      	<li>16:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a>
-      	&nbsp;&nbsp;&nbsp;&nbsp;17:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a></li><br/>
-      	<li>18:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a>
-      	&nbsp;&nbsp;&nbsp;&nbsp;19:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a></li><br/>
-      	<li>20:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a>
-      	&nbsp;&nbsp;&nbsp;&nbsp;21:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a></li><br/>
-      	<li>22:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a>
-      	&nbsp;&nbsp;&nbsp;&nbsp;23:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a></li><br/>
-      	<li>24:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a></li><br/>
+      	<li>12:00  &nbsp;&nbsp;인원:  <%= rs.getInt("12Member") %>명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a>
+      	&nbsp;&nbsp;&nbsp;&nbsp;13:00  &nbsp;&nbsp;인원:  <%= rs.getInt("13Member") %>명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a></li><br/>
+      	<li>14:00  &nbsp;&nbsp;인원:  <%= rs.getInt("14Member") %>명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a>
+      	&nbsp;&nbsp;&nbsp;&nbsp;15:00  &nbsp;&nbsp;인원:  <%= rs.getInt("15Member") %>명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a></li><br/>
+      	<li>16:00  &nbsp;&nbsp;인원:  <%= rs.getInt("16Member") %>명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a>
+      	&nbsp;&nbsp;&nbsp;&nbsp;17:00  &nbsp;&nbsp;인원:  <%= rs.getInt("17Member") %>명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a></li><br/>
+      	<li>18:00  &nbsp;&nbsp;인원:  <%= rs.getInt("18Member") %>명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a>
+      	&nbsp;&nbsp;&nbsp;&nbsp;19:00  &nbsp;&nbsp;인원:  <%= rs.getInt("19Member") %>명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a></li><br/>
+      	<li>20:00  &nbsp;&nbsp;인원:  <%= rs.getInt("20Member") %>명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a>
+      	&nbsp;&nbsp;&nbsp;&nbsp;21:00  &nbsp;&nbsp;인원:  <%= rs.getInt("21Member") %>명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a></li><br/>
+      	<li>22:00  &nbsp;&nbsp;인원:  <%= rs.getInt("22Member") %>명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a>
+      	&nbsp;&nbsp;&nbsp;&nbsp;23:00  &nbsp;&nbsp;인원:  <%= rs.getInt("23Member") %>명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a></li><br/>
+      	<li>24:00  &nbsp;&nbsp;인원:  <%= rs.getInt("24Member") %>명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a></li><br/>
+      	<% 
+						}
+					}catch (ClassNotFoundException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					} finally {
+						// 무슨 일이 있어도 리소스를 제대로 종료
+						if (rs != null) try{rs.close();} catch(SQLException e) {}
+						if (stmt != null) try{stmt.close();} catch(SQLException e) {}
+						if (conn != null) try{conn.close();} catch(SQLException e) {}
+					}
+      	%>
 		   <div class="btn">
 		    <a href="index.jsp" class="Button">HOME</a>
 		    </div>
@@ -61,7 +81,6 @@
 				</fieldset>
 		  </form>
     </div>
-	<% } %>
   </div>
 </body>
 </html>
