@@ -18,7 +18,11 @@
    			
    			<script launguage='JAVASCRIPT'>
    			function loginalert(){
+<<<<<<< HEAD:project_JSP/WebContent/index.jsp
    				alert("·Î±×ÀÎÀÌ ÇÊ¿äÇÑ ¼­ºñ½º ÀÔ´Ï´Ù."); 
+=======
+   				alert("ë¡œê·¸ì¸ì´ í•„ìš”í•œ ì„œë¹„ìŠ¤ ì…ë‹ˆë‹¤."); 
+>>>>>>> c4d13ddbd9c2b0c8ffcf9c29fe088699818d215a:project JSP/WebContent/Index.jsp
    			}
    			</script>
    			
@@ -59,10 +63,10 @@
 				</div>
 				<div class="code">
 					<h4>Follow this Script</h4>
-					<p>RanFoo¸¦ ÇÏ±â À§ÇØ¼­´Â</p>
-					<code> ¨ç Subway Map¿¡¼­ ÀÚ½ÅÀÌ ¿øÇÏ´Â ¿ªÀ» °ñ¶ó µé¾î°©´Ï´Ù.<br />
-                           ¨è ÀÚ½ÅÀÌ ¿øÇÏ´Â ½Ä»ç ½Ã°£¿¡ ½ÅÃ»ÇÕ´Ï´Ù.<br />
-                           ¨é ½ÅÃ»µÈ ½Ã°£´ëÀÇ Ã¤ÆÃ¹æ¿¡¼­ »õ·Î¿î »ç¶÷µé°ú ¼¼ºÎÀûÀÎ <br />¾à¼ÓÀ» Á¤ÇÏ°í ¸¸³ª¸é ³¡!</code>
+					<p>RanFooë¥¼ í•˜ê¸° ìœ„í•´ì„œëŠ”</p>
+					<code> â‘  Subway Mapì—ì„œ ìì‹ ì´ ì›í•˜ëŠ” ì—­ì„ ê³¨ë¼ ë“¤ì–´ê°‘ë‹ˆë‹¤.<br />
+                           â‘¡ ìì‹ ì´ ì›í•˜ëŠ” ì‹ì‚¬ ì‹œê°„ì— ì‹ ì²­í•©ë‹ˆë‹¤.<br />
+                           â‘¢ ì‹ ì²­ëœ ì‹œê°„ëŒ€ì˜ ì±„íŒ…ë°©ì—ì„œ ìƒˆë¡œìš´ ì‚¬ëŒë“¤ê³¼ ì„¸ë¶€ì ì¸ <br />ì•½ì†ì„ ì •í•˜ê³  ë§Œë‚˜ë©´ ë!</code>
 				</div>
 				<div class="clr"></div>
 			</section>
@@ -73,6 +77,7 @@
 				</div>
 				<div class="code">
 					<h4>Click the Line</h4>
+<<<<<<< HEAD:project_JSP/WebContent/index.jsp
 				  <p>Ranfoo ÇÒ ÁöÇÏÃ¶ ³ë¼±À» ¼±ÅÃÇÏ¼¼¿ä.</p>
 					<code>
 										<% if (session.getAttribute("id") == null ) { %>
@@ -116,6 +121,51 @@
                     &nbsp;<a href="Line18.html"><img src="images/18.png"alt="¼öÀÎ¼±"></a>
                     &nbsp;<a href="Line19.html"><img src="images/19.png"alt="ºĞ´ç¼±"></a>
                     &nbsp;<a href="Line20.html"><img src="images/20.png"alt="ÀÎÃµ¼±"></a>
+=======
+				  <p>Ranfoo í•  ì§€í•˜ì²  ë…¸ì„ ì„ ì„ íƒí•˜ì„¸ìš”.</p>
+					<code>
+										<% if (session.getAttribute("id") == null ) { %>
+													<a href="loginpage.jsp" onclick="loginalert()"><img src="images/1.png"alt="1í˜¸ì„ "></a>
+                    &nbsp;<a href="loginpage.jsp" onclick="loginalert()"><img src="images/2.png"alt="2í˜¸ì„ "></a>
+                    &nbsp;<a href="loginpage.jsp" onclick="loginalert()"><img src="images/3.png"alt="3í˜¸ì„ "></a>
+                    &nbsp;<a href="loginpage.jsp" onclick="loginalert()"><img src="images/4.png"alt="4í˜¸ì„ "></a>
+                    &nbsp;<a href="loginpage.jsp" onclick="loginalert()"><img src="images/5.png"alt="5í˜¸ì„ "></a>
+                    &nbsp;<a href="loginpage.jsp" onclick="loginalert()"><img src="images/6.png"alt="6í˜¸ì„ "></a>
+                    &nbsp;<a href="loginpage.jsp" onclick="loginalert()"><img src="images/7.png"alt="7í˜¸ì„ "></a>
+                    &nbsp;<a href="loginpage.jsp" onclick="loginalert()"><img src="images/8.png"alt="8í˜¸ì„ "></a>
+                    &nbsp;<a href="loginpage.jsp" onclick="loginalert()"><img src="images/9.png"alt="9í˜¸ì„ "></a>
+                    <br /><a href="loginpage.jsp" onclick="loginalert()"><img src="images/11.png"alt="ì‹ ë¶„ë‹¹ì„ "></a>
+                    &nbsp;<a href="loginpage.jsp" onclick="loginalert()"><img src="images/12.png"alt="ê³µí•­ì„ "></a>
+                    &nbsp;<a href="loginpage.jsp" onclick="loginalert()"><img src="images/13.png"alt="ì¤‘ì•™ì„ "></a>
+                    &nbsp;<a href="loginpage.jsp" onclick="loginalert()"><img src="images/14.png"alt="ì˜ì •ë¶€ì„ "></a>
+                    &nbsp;<a href="loginpage.jsp" onclick="loginalert()"><img src="images/15.png"alt="ê²½ì˜ì„ "></a>
+                    <br /><a href="loginpage.jsp" onclick="loginalert()"><img src="images/16.png"alt="ê²½ì¶˜ì„ "></a>
+                    &nbsp;<a href="loginpage.jsp" onclick="loginalert()"><img src="images/17.png"alt="ì—ë²„ëœë“œì„ "></a>
+                    &nbsp;<a href="loginpage.jsp" onclick="loginalert()"><img src="images/18.png"alt="ìˆ˜ì¸ì„ "></a>
+                    &nbsp;<a href="loginpage.jsp" onclick="loginalert()"><img src="images/19.png"alt="ë¶„ë‹¹ì„ "></a>
+                    &nbsp;<a href="loginpage.jsp" onclick="loginalert()"><img src="images/20.png"alt="ì¸ì²œì„ "></a>
+                    
+                    <% } else { %>
+													<a href="Line1-1.html"><img src="images/1.png"alt="1í˜¸ì„ "></a>
+                    &nbsp;<a href="Line2-2.html"><img src="images/2.png"alt="2í˜¸ì„ "></a>
+                    &nbsp;<a href="Line3-3.html"><img src="images/3.png"alt="3í˜¸ì„ "></a>
+                    &nbsp;<a href="Line4-4.html"><img src="images/4.png"alt="4í˜¸ì„ "></a>
+                    &nbsp;<a href="Line5-5.html"><img src="images/5.png"alt="5í˜¸ì„ "></a>
+                    &nbsp;<a href="Line6-6.html"><img src="images/6.png"alt="6í˜¸ì„ "></a>
+                    &nbsp;<a href="Line7-7.html"><img src="images/7.png"alt="7í˜¸ì„ "></a>
+                    &nbsp;<a href="Line8-8.html"><img src="images/8.png"alt="8í˜¸ì„ "></a>
+                    &nbsp;<a href="Line9-9.html"><img src="images/9.png"alt="9í˜¸ì„ "></a>
+                    <br /><a href="Line11.html"><img src="images/11.png"alt="ì‹ ë¶„ë‹¹ì„ "></a>
+                    &nbsp;<a href="Line12.html"><img src="images/12.png"alt="ê³µí•­ì„ "></a>
+                    &nbsp;<a href="Line13.html"><img src="images/13.png"alt="ì¤‘ì•™ì„ "></a>
+                    &nbsp;<a href="Line14.html"><img src="images/14.png"alt="ì˜ì •ë¶€ì„ "></a>
+                    &nbsp;<a href="Line15.html"><img src="images/15.png"alt="ê²½ì˜ì„ "></a>
+                    <br /><a href="Line16.html"><img src="images/16.png"alt="ê²½ì¶˜ì„ "></a>
+                    &nbsp;<a href="Line17.html"><img src="images/17.png"alt="ì—ë²„ëœë“œì„ "></a>
+                    &nbsp;<a href="Line18.html"><img src="images/18.png"alt="ìˆ˜ì¸ì„ "></a>
+                    &nbsp;<a href="Line19.html"><img src="images/19.png"alt="ë¶„ë‹¹ì„ "></a>
+                    &nbsp;<a href="Line20.html"><img src="images/20.png"alt="ì¸ì²œì„ "></a>
+>>>>>>> c4d13ddbd9c2b0c8ffcf9c29fe088699818d215a:project JSP/WebContent/Index.jsp
                     <% } %>
        		</code>
 				</div>
@@ -128,7 +178,11 @@
 				</div>
 				<div class="code">
 					<h4>You can edit your page</h4>
+<<<<<<< HEAD:project_JSP/WebContent/index.jsp
                     <p>°³ÀÎÁ¤º¸, ¼Ò°³±Û, Join ³»¿ª È®ÀÎ</p>
+=======
+                    <p>ê°œì¸ì •ë³´, ì†Œê°œê¸€, Join ë‚´ì—­ í™•ì¸</p>
+>>>>>>> c4d13ddbd9c2b0c8ffcf9c29fe088699818d215a:project JSP/WebContent/Index.jsp
                     <% if(session.getAttribute("id") == null) { %>
                     	<code><a href="loginpage.jsp" onclick="loginalert()">Go to MY PAGE</a></code>
                     <% } else { %>
@@ -145,10 +199,10 @@
 				<div class="code">
 					<h4>Contact Us</h4>
 					<p>We are watching 24hours </p>
-					<code>Ranfoo°í°´¼¾ÅÍ´Â È¸¿øµéÀÇ ´õ ³ªÀº »ç¿ëÀ» À§ÇÏ¿© <br />24½Ã°£ ´ë±âÇÏ°í ÀÖ½À´Ï´Ù. <br />¾ğÁ¦µçÁö ÇÏ´ÜÀÇ E-mail·Î ÀÇ°ßÀ» º¸³»ÁÖ¼¼¿ä.</code>
+					<code>Ranfooê³ ê°ì„¼í„°ëŠ” íšŒì›ë“¤ì˜ ë” ë‚˜ì€ ì‚¬ìš©ì„ ìœ„í•˜ì—¬ <br />24ì‹œê°„ ëŒ€ê¸°í•˜ê³  ìˆìŠµë‹ˆë‹¤. <br />ì–¸ì œë“ ì§€ í•˜ë‹¨ì˜ E-mailë¡œ ì˜ê²¬ì„ ë³´ë‚´ì£¼ì„¸ìš”.</code>
 					<p class="buttons">
-						<a id="button_anim1" href="mailto:WAAP911@gmail.com"><span>RanFoo 911</span><span>ºÎÀûÀıÇÑ »ç¿ëÀÚ ½Å°í &amp; ±âÅ¸ ¹®ÀÇ<br /> ÀÌÀ¯¿Í ¾ÆÀÌµğ ±âÀçÇÏ¿© WAAP911@gmail.com À¸·Î ½Å°íÇÏ¼¼¿ä.<br /></span></a>
-						<a id="button_anim2" ><span>Contact WAAP</span><span>WAAP911@gmail.com&nbsp;&nbsp; 010.3027.1867<br />°æ±âµµ ¼º³²½Ã ºĞ´ç±¸ </span></a>
+						<a id="button_anim1" href="mailto:WAAP911@gmail.com"><span>RanFoo 911</span><span>ë¶€ì ì ˆí•œ ì‚¬ìš©ì ì‹ ê³  &amp; ê¸°íƒ€ ë¬¸ì˜<br /> ì´ìœ ì™€ ì•„ì´ë”” ê¸°ì¬í•˜ì—¬ WAAP911@gmail.com ìœ¼ë¡œ ì‹ ê³ í•˜ì„¸ìš”.<br /></span></a>
+						<a id="button_anim2" ><span>Contact WAAP</span><span>WAAP911@gmail.com&nbsp;&nbsp; 010.3027.1867<br />ê²½ê¸°ë„ ì„±ë‚¨ì‹œ ë¶„ë‹¹êµ¬ </span></a>
 					</p>
 				</div>
 				</section>

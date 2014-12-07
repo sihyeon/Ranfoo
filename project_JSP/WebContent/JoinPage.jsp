@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@page import="java.sql.*" %>
+<%@page import="station.*" %>
+<%@page import="java.util.*" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,7 +17,6 @@
   </style>
 </head>
 <body>
-
   <div class="container">
 	<%	if (request.getMethod() == "POST") { %>
 		 <div class="well">
@@ -35,6 +37,7 @@
 					You can Join this Station in any time.
 				</div>
 				<div class ="form-vertical">
+				
 				<label class="col-lg-12 control-label">Join Station : 
 				</label>
 				</div>
@@ -49,10 +52,11 @@
       	<li>18:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a>
       	&nbsp;&nbsp;&nbsp;&nbsp;19:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a></li><br/>
       	<li>20:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a>
-      	&nbsp;&nbsp;&nbsp;&nbsp;21:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a></li><br/>
+      	&nbsp;&nbsp;&nbsp;&nbsp;21:00  &nbsp;&nbsp;인원:  명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a></li><br/>
       	<li>22:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a>
       	&nbsp;&nbsp;&nbsp;&nbsp;23:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a></li><br/>
       	<li>24:00  &nbsp;&nbsp;인원:  0명   &nbsp;&nbsp;<a href="chat.jsp" class="myButton">Join</a></li><br/>
+      	
 		   <div class="btn">
 		    <a href="index.html" class="Button">HOME</a>
 		    </div>
@@ -64,5 +68,23 @@
 	<% } %>
   </div>
 </body>
+<<<<<<< HEAD:project_JSP/WebContent/JoinPage.jsp
+=======
+<script type="text/javascript">
+	function receive() {
+	
+		$.get('StationServlet', {
+		}, function(data) {
+			// 전달받은 JSON을 파싱/처리
+	
+			$(data.msgs).each(
+				function(i, item) {
+					// 각 메시지를 해당위치에 추가
+					
+			});
+		});
+	}
+</script>
+>>>>>>> c4d13ddbd9c2b0c8ffcf9c29fe088699818d215a:project JSP/WebContent/JoinPage.jsp
 </html>
 

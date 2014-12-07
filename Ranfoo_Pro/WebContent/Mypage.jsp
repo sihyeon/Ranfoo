@@ -9,13 +9,6 @@
 	<link href="css/mypage.css" rel="stylesheet">
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-
-	<script launguage='JAVASCRIPT'>
-   			function submitalert(){
-   				alert("저장되었습니다."); 
-   			}
-   			</script>
-   			
 </head>
 <body>
   <div class="container">
@@ -42,7 +35,6 @@
 	    </ul>
 		 </div>
   <%} else { %>
-    
     <div>
 			<form class="form-horizontal">
   <fieldset>
@@ -53,7 +45,6 @@
         <input type="text" class="form-control" id="inputEmail" placeholder="Name">
       </div>
     </div>
-    <div class="clr"></div>
     
      <div class="form-group">
       <label for="inputPassword" class="col-lg-2 control-label">Password</label>
@@ -61,14 +52,13 @@
         <input type="password" class="form-control" id="inputPassword" placeholder="Password">
         </div>
     </div><!-- form-group -->
-    <div class="clr"></div>
     
     <div class="form-group">
       <label class="col-lg-2 control-label">Gender</label>
       <div class="col-lg-10">
         <div class="checkbox">
           <label>
-            <input type="checkbox" value="M" > Male
+            <input type="checkbox" value="M" checked=""> Male
           </label>
           <label>
           	<input type = "checkbox" value="F">Female
@@ -76,55 +66,53 @@
         </div>
       </div>
     </div><!-- form-group -->
-     <div class="clr"></div>
      
     <div class="form-group">
       <label class="col-lg-2 control-label">Ages</label>
       <div class="col-lg-10">
         <div class="radio">
           <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios1" >
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
             10대
           </label>
         </div>
         
         <div class="radio">
           <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios2" >
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
             20대
           </label>
         </div>
         
         <div class="radio">
           <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios3" >
+            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
             30대
           </label>
         </div>
         
         <div class="radio">
           <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios4" >
+            <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
             40대
           </label>
         </div>
         
         <div class="radio">
           <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios5" >
+            <input type="radio" name="optionsRadios" id="optionsRadios5" value="option5">
             50대
           </label>
         </div>
         
         <div class="radio">
           <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios6" >
+            <input type="radio" name="optionsRadios" id="optionsRadios6" value="option6">
             60대
           </label>
         </div>
       </div>
     </div>
-    <div class="clr"></div>
     
     <div class="form-group">
       <label for="textArea" class="col-lg-2 control-label">Introduce yourself</label>
@@ -133,7 +121,6 @@
         <span class="help-block">ex ) 당신이 좋아하는 음식의 종류</span>
       </div>
     </div>
-    <div class="clr"></div>
     
     <div class="form-group">
       <label for="select" class="col-lg-2 control-label">Joined Station</label>
@@ -141,20 +128,13 @@
      
       </div>
     </div>
-    <div class="clr"></div>
     
     <div class="form-group">
       <div class="col-lg-10 col-lg-offset-2">
-<<<<<<< HEAD:project_JSP/WebContent/Mypage.jsp
-        <a href="index.jsp"><button class="btn btn-default">Cancel</button></a>
-        <a href="index.jsp" onclick="submitalert()"><button class="btn btn-primary" >Submit</button></a>
-=======
-        <a href="index.jsp" class="btn btn-default">Cancel</a>
-        <a href="index.jsp"  class="btn btn-primary" onclick="submitalert()" >Submit</a>
->>>>>>> c4d13ddbd9c2b0c8ffcf9c29fe088699818d215a:project JSP/WebContent/Mypage.jsp
+        <button class="btn btn-default">Cancel</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
       </div>
     </div>
-    <div class="clr"></div>
   </fieldset>
 </form>
     </div>
