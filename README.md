@@ -11,3 +11,5 @@ using ID :
 박시현 - sihyeon
 김희준 - gimijuny / heejun
 주영진 - YoungjinJoo / jkevin0119
+
+http://117.17.158.70:9988/Ranfoo_Jsp
