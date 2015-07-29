@@ -1,9 +1,7 @@
 Ranfoo
 ======
+Author : PARK SI HYEUN
 
-Web_Project_1_Ranfoo
+Hello, This is my first web cording.
 
-박시현
-
-http://117.17.158.70:9988/Ranfoo_Jsp
 
